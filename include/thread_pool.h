@@ -42,7 +42,7 @@ public:
     
     void kill_worker(int n);
 
-    friend void taskFunc(void* arg, void *pool);
+    friend void taskFunc(char* arg[]);
 
 private:
     // 工作的线程任务函数
@@ -69,4 +69,6 @@ private:
     bool shutdown;    //是不是要销毁线程池，销毁为1，不销毁为0
 public:
     std::mutex pool_mtx;                 //线程池的锁
+    std::condition_variable main_condition;
+    std::mutex mtx;
 };

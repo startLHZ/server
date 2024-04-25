@@ -5,14 +5,14 @@
 #include <condition_variable>
 // #include "thread_pool.h"
 
-using callback = void (*)(void* arg, void* pool);
+using callback = void (*)(char* arg[]);
 
 class Task{
 public:
-    Task(callback func = nullptr, void* arg = nullptr) : function(func), arg(arg){};
+    Task(callback func = nullptr, void* fd = nullptr) : function(func), fd(fd){};
 
     callback function;
-    void* arg;
+    void* fd;
 };
 
 class task_queue
