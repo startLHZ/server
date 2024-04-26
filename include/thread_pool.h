@@ -38,18 +38,11 @@ public:
         return taskQ->get_task_number();
     }
 
-    void make_thread(int n);
-    
-    void kill_worker(int n);
-
-    friend void taskFunc(char* arg[]);
-
-private:
     // 工作的线程任务函数
     static void* worker(void* arg);
 
     // 管理者线程任务函数
-    static void* manager(void* arg);
+    void manager(int sockfd, int flag, int epfd = -1);
 
 private:
     std::condition_variable notEmpty;    //条件变量，队列不为空
@@ -58,14 +51,6 @@ private:
     int minNum;               //最小线程数量
     int busyNum;              //在忙线程数
     int aliveNum;             //存活线程数
-
-    int lfd = -1;
-    int epfd = -1;
-    struct epoll_event ev;
-    struct epoll_event evs[1024];
-    int size;
-    int ret;
-
     bool shutdown;    //是不是要销毁线程池，销毁为1，不销毁为0
 public:
     std::mutex pool_mtx;                 //线程池的锁

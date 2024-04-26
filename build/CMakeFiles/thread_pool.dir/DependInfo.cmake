@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/lhz/server/src/main.cpp" "CMakeFiles/thread_pool.dir/src/main.cpp.o" "gcc" "CMakeFiles/thread_pool.dir/src/main.cpp.o.d"
+  "/home/lhz/server/src/server.cpp" "CMakeFiles/thread_pool.dir/src/server.cpp.o" "gcc" "CMakeFiles/thread_pool.dir/src/server.cpp.o.d"
   "/home/lhz/server/src/task_queue.cpp" "CMakeFiles/thread_pool.dir/src/task_queue.cpp.o" "gcc" "CMakeFiles/thread_pool.dir/src/task_queue.cpp.o.d"
   "/home/lhz/server/src/thread_pool.cpp" "CMakeFiles/thread_pool.dir/src/thread_pool.cpp.o" "gcc" "CMakeFiles/thread_pool.dir/src/thread_pool.cpp.o.d"
   )

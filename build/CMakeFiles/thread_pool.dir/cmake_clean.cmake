@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/thread_pool.dir/src/main.cpp.o"
   "CMakeFiles/thread_pool.dir/src/main.cpp.o.d"
+  "CMakeFiles/thread_pool.dir/src/server.cpp.o"
+  "CMakeFiles/thread_pool.dir/src/server.cpp.o.d"
   "CMakeFiles/thread_pool.dir/src/task_queue.cpp.o"
   "CMakeFiles/thread_pool.dir/src/task_queue.cpp.o.d"
   "CMakeFiles/thread_pool.dir/src/thread_pool.cpp.o"

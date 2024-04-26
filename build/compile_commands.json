@@ -13,5 +13,10 @@
   "directory": "/home/lhz/server/build",
   "command": "/usr/bin/g++  -I/home/lhz/server/include -g -o CMakeFiles/thread_pool.dir/src/thread_pool.cpp.o -c /home/lhz/server/src/thread_pool.cpp",
   "file": "/home/lhz/server/src/thread_pool.cpp"
+},
+{
+  "directory": "/home/lhz/server/build",
+  "command": "/usr/bin/g++  -I/home/lhz/server/include -g -o CMakeFiles/thread_pool.dir/src/server.cpp.o -c /home/lhz/server/src/server.cpp",
+  "file": "/home/lhz/server/src/server.cpp"
 }
 ]
