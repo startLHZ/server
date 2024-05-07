@@ -1,5 +1,6 @@
 #pragma once
 #include "thread_pool.h"
+#include "logger.h"
 
 class my_server {
 public:
@@ -7,6 +8,7 @@ public:
     ~my_server();
     void epoll_init();
     void mainLoop();
+    void log_init();
 private:
     // basic
     bool stop_server;

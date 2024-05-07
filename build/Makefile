@@ -117,24 +117,48 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named thread_pool
+# Target rules for targets named myserver
 
 # Build rule for target.
-thread_pool: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 thread_pool
-.PHONY : thread_pool
+myserver: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 myserver
+.PHONY : myserver
 
 # fast build rule for target.
-thread_pool/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_pool.dir/build.make CMakeFiles/thread_pool.dir/build
-.PHONY : thread_pool/fast
+myserver/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myserver.dir/build.make CMakeFiles/myserver.dir/build
+.PHONY : myserver/fast
+
+src/logger.o: src/logger.cpp.o
+.PHONY : src/logger.o
+
+# target to build an object file
+src/logger.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myserver.dir/build.make CMakeFiles/myserver.dir/src/logger.cpp.o
+.PHONY : src/logger.cpp.o
+
+src/logger.i: src/logger.cpp.i
+.PHONY : src/logger.i
+
+# target to preprocess a source file
+src/logger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myserver.dir/build.make CMakeFiles/myserver.dir/src/logger.cpp.i
+.PHONY : src/logger.cpp.i
+
+src/logger.s: src/logger.cpp.s
+.PHONY : src/logger.s
+
+# target to generate assembly for a file
+src/logger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myserver.dir/build.make CMakeFiles/myserver.dir/src/logger.cpp.s
+.PHONY : src/logger.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_pool.dir/build.make CMakeFiles/thread_pool.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myserver.dir/build.make CMakeFiles/myserver.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -142,7 +166,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_pool.dir/build.make CMakeFiles/thread_pool.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myserver.dir/build.make CMakeFiles/myserver.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -150,7 +174,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_pool.dir/build.make CMakeFiles/thread_pool.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myserver.dir/build.make CMakeFiles/myserver.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/server.o: src/server.cpp.o
@@ -158,7 +182,7 @@ src/server.o: src/server.cpp.o
 
 # target to build an object file
 src/server.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_pool.dir/build.make CMakeFiles/thread_pool.dir/src/server.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myserver.dir/build.make CMakeFiles/myserver.dir/src/server.cpp.o
 .PHONY : src/server.cpp.o
 
 src/server.i: src/server.cpp.i
@@ -166,7 +190,7 @@ src/server.i: src/server.cpp.i
 
 # target to preprocess a source file
 src/server.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_pool.dir/build.make CMakeFiles/thread_pool.dir/src/server.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myserver.dir/build.make CMakeFiles/myserver.dir/src/server.cpp.i
 .PHONY : src/server.cpp.i
 
 src/server.s: src/server.cpp.s
@@ -174,7 +198,7 @@ src/server.s: src/server.cpp.s
 
 # target to generate assembly for a file
 src/server.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_pool.dir/build.make CMakeFiles/thread_pool.dir/src/server.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myserver.dir/build.make CMakeFiles/myserver.dir/src/server.cpp.s
 .PHONY : src/server.cpp.s
 
 src/task_queue.o: src/task_queue.cpp.o
@@ -182,7 +206,7 @@ src/task_queue.o: src/task_queue.cpp.o
 
 # target to build an object file
 src/task_queue.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_pool.dir/build.make CMakeFiles/thread_pool.dir/src/task_queue.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myserver.dir/build.make CMakeFiles/myserver.dir/src/task_queue.cpp.o
 .PHONY : src/task_queue.cpp.o
 
 src/task_queue.i: src/task_queue.cpp.i
@@ -190,7 +214,7 @@ src/task_queue.i: src/task_queue.cpp.i
 
 # target to preprocess a source file
 src/task_queue.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_pool.dir/build.make CMakeFiles/thread_pool.dir/src/task_queue.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myserver.dir/build.make CMakeFiles/myserver.dir/src/task_queue.cpp.i
 .PHONY : src/task_queue.cpp.i
 
 src/task_queue.s: src/task_queue.cpp.s
@@ -198,7 +222,7 @@ src/task_queue.s: src/task_queue.cpp.s
 
 # target to generate assembly for a file
 src/task_queue.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_pool.dir/build.make CMakeFiles/thread_pool.dir/src/task_queue.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myserver.dir/build.make CMakeFiles/myserver.dir/src/task_queue.cpp.s
 .PHONY : src/task_queue.cpp.s
 
 src/thread_pool.o: src/thread_pool.cpp.o
@@ -206,7 +230,7 @@ src/thread_pool.o: src/thread_pool.cpp.o
 
 # target to build an object file
 src/thread_pool.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_pool.dir/build.make CMakeFiles/thread_pool.dir/src/thread_pool.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myserver.dir/build.make CMakeFiles/myserver.dir/src/thread_pool.cpp.o
 .PHONY : src/thread_pool.cpp.o
 
 src/thread_pool.i: src/thread_pool.cpp.i
@@ -214,7 +238,7 @@ src/thread_pool.i: src/thread_pool.cpp.i
 
 # target to preprocess a source file
 src/thread_pool.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_pool.dir/build.make CMakeFiles/thread_pool.dir/src/thread_pool.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myserver.dir/build.make CMakeFiles/myserver.dir/src/thread_pool.cpp.i
 .PHONY : src/thread_pool.cpp.i
 
 src/thread_pool.s: src/thread_pool.cpp.s
@@ -222,7 +246,7 @@ src/thread_pool.s: src/thread_pool.cpp.s
 
 # target to generate assembly for a file
 src/thread_pool.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_pool.dir/build.make CMakeFiles/thread_pool.dir/src/thread_pool.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myserver.dir/build.make CMakeFiles/myserver.dir/src/thread_pool.cpp.s
 .PHONY : src/thread_pool.cpp.s
 
 # Help Target
@@ -233,7 +257,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... thread_pool"
+	@echo "... myserver"
+	@echo "... src/logger.o"
+	@echo "... src/logger.i"
+	@echo "... src/logger.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

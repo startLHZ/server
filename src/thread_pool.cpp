@@ -14,6 +14,7 @@
 #include <sys/epoll.h>
 #include <fcntl.h>
 #include <errno.h>
+#include "logger.h"
 
 thread_pool::thread_pool() : shutdown(false), busyNum(0), aliveNum(0), minNum(10)
 {
@@ -35,9 +36,9 @@ thread_pool::~thread_pool() {
     shutdown = true;
     for (int i  = 0; i < threadIDs.size(); ++ i) {
         notEmpty.notify_one();
-        if(threadIDs[i].joinable()){
+        if(threadIDs[i].joinable()) {
             threadIDs[i].join(); // 等待任务结束， 前提：线程一定会执行完
-        }     
+        } 
     }
     mtx.unlock();
     main_condition.notify_one();
@@ -63,6 +64,7 @@ void* thread_pool::worker(void* arg) {
         locker.unlock();
         
         curTask.function(curTask.fd, curTask.epfd);
+        INFOLOG("worker get task");
 
         locker.lock();
         pool->busyNum --;
@@ -72,9 +74,10 @@ void* thread_pool::worker(void* arg) {
 
 void thread_pool::add_task(Task task) {
     if (shutdown) return ;
-    std::unique_lock<std::mutex> locker(pool_mtx, std::defer_lock);
+    // std::unique_lock<std::mutex> locker(pool_mtx, std::defer_lock);
     // locker.lock();
     taskQ->add_task_Q(task);
+    INFOLOG("taskQueue add task");
     // locker.unlock();
     notEmpty.notify_one();
 }
@@ -89,7 +92,7 @@ void taskRead(int arg, int epfd) {
         int len = recv(sockfd, buf, sizeof(buf), 0);
         if(len == 0) {
             // 非阻塞模式下和阻塞模式是一样的 => 判断对方是否断开连接
-            printf("客户端断开了连接...\n");
+            INFOLOG("client close");
             // 将这个文件描述符从epoll模型中删除
             epoll_ctl(epfd, EPOLL_CTL_DEL, sockfd, NULL);
             close(sockfd);
@@ -99,6 +102,7 @@ void taskRead(int arg, int epfd) {
             // 接收的数据打印到终端
             write(STDOUT_FILENO, buf, len);
             std::cout << std::endl;
+            INFOLOG("client write");
             // // 发送数据
             // send(curfd, buf, len, 0);
         } else {
@@ -107,6 +111,7 @@ void taskRead(int arg, int epfd) {
                 break;
             else {
                 perror("recv");
+                ERRORLOG("recv error!");
                 exit(0);
             }
         }
@@ -114,7 +119,13 @@ void taskRead(int arg, int epfd) {
 }
 
 void taskWrite(int arg, int epfd) {
-
+    int sockfd = arg;
+    char buf[64] = "server send message";
+    // memset(buf, 0, sizeof(buf));
+    // char msg[64] = "server send message";
+    // 发送数据
+    send(sockfd, buf, sizeof(buf), 0);
+    INFOLOG("server send message");
 }
 
 void thread_pool::manager(int sockfd, int flag, int epfd) {
@@ -130,9 +141,10 @@ void thread_pool::manager(int sockfd, int flag, int epfd) {
 
         
     Task task;
-    if (flag == 0)
+    if (flag == 0){
         task.function = taskWrite;
-    else {
+        task.epfd = epfd;
+    } else {
         task.function = taskRead;
         task.epfd = epfd;
     }

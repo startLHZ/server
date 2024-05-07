@@ -1,22 +1,27 @@
 [
 {
   "directory": "/home/lhz/server/build",
-  "command": "/usr/bin/g++  -I/home/lhz/server/include -g -o CMakeFiles/thread_pool.dir/src/main.cpp.o -c /home/lhz/server/src/main.cpp",
+  "command": "/usr/bin/g++  -I/home/lhz/server/include -I/home/lhz/server/lib/spdlog -I/home/lhz/server/lib -g -std=c++17 -pthread -o CMakeFiles/myserver.dir/src/main.cpp.o -c /home/lhz/server/src/main.cpp",
   "file": "/home/lhz/server/src/main.cpp"
 },
 {
   "directory": "/home/lhz/server/build",
-  "command": "/usr/bin/g++  -I/home/lhz/server/include -g -o CMakeFiles/thread_pool.dir/src/task_queue.cpp.o -c /home/lhz/server/src/task_queue.cpp",
+  "command": "/usr/bin/g++  -I/home/lhz/server/include -I/home/lhz/server/lib/spdlog -I/home/lhz/server/lib -g -std=c++17 -pthread -o CMakeFiles/myserver.dir/src/task_queue.cpp.o -c /home/lhz/server/src/task_queue.cpp",
   "file": "/home/lhz/server/src/task_queue.cpp"
 },
 {
   "directory": "/home/lhz/server/build",
-  "command": "/usr/bin/g++  -I/home/lhz/server/include -g -o CMakeFiles/thread_pool.dir/src/thread_pool.cpp.o -c /home/lhz/server/src/thread_pool.cpp",
+  "command": "/usr/bin/g++  -I/home/lhz/server/include -I/home/lhz/server/lib/spdlog -I/home/lhz/server/lib -g -std=c++17 -pthread -o CMakeFiles/myserver.dir/src/thread_pool.cpp.o -c /home/lhz/server/src/thread_pool.cpp",
   "file": "/home/lhz/server/src/thread_pool.cpp"
 },
 {
   "directory": "/home/lhz/server/build",
-  "command": "/usr/bin/g++  -I/home/lhz/server/include -g -o CMakeFiles/thread_pool.dir/src/server.cpp.o -c /home/lhz/server/src/server.cpp",
+  "command": "/usr/bin/g++  -I/home/lhz/server/include -I/home/lhz/server/lib/spdlog -I/home/lhz/server/lib -g -std=c++17 -pthread -o CMakeFiles/myserver.dir/src/server.cpp.o -c /home/lhz/server/src/server.cpp",
   "file": "/home/lhz/server/src/server.cpp"
+},
+{
+  "directory": "/home/lhz/server/build",
+  "command": "/usr/bin/g++  -I/home/lhz/server/include -I/home/lhz/server/lib/spdlog -I/home/lhz/server/lib -g -std=c++17 -pthread -o CMakeFiles/myserver.dir/src/logger.cpp.o -c /home/lhz/server/src/logger.cpp",
+  "file": "/home/lhz/server/src/logger.cpp"
 }
 ]

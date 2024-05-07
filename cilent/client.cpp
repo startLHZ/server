@@ -37,6 +37,24 @@ int main()
         std::cin >> buf;
         write(fd, buf, strlen(buf)+1);
         sleep(1);   
+
+        // 接收数据
+        memset(buf, 0, sizeof(buf));
+        int len = read(fd, buf, sizeof(buf));
+        if(len > 0)
+        {
+            printf("服务器say: %s\n", buf);
+        }
+        else if(len == 0)
+        {
+            printf("服务器断开了连接...\n");
+            break;
+        }
+        else
+        {
+            perror("read");
+            break;
+        }
     }
 
     close(fd);

@@ -13,21 +13,23 @@
 #include <string.h>
 #include <arpa/inet.h>
 
+
 my_server::my_server() {
     this->stop_server = false;
+    log_init();
     this->epoll_init();
     this->m_thread_pool = new thread_pool;
+    INFOLOG("server init complete!");
 }
 
 my_server::~my_server() {
+    INFOLOG("server close");
     delete m_thread_pool;
 }
 
 void my_server::mainLoop() {
     while (!stop_server) {
          int number = epoll_wait(epfd, events, size, -1);
-        
-
         for (int i = 0; i < number; i ++) {
             int sockfd = events[i].data.fd;
 
@@ -50,6 +52,7 @@ void my_server::mainLoop() {
             } else if (events[i].events & EPOLLIN) {
                 // 读事件
                 m_thread_pool->manager(sockfd, 1, epfd);
+                m_thread_pool->manager(sockfd, 0, epfd);
             } else {
                 // 写事件
                 m_thread_pool->manager(sockfd, 0);
@@ -64,6 +67,7 @@ void my_server::epoll_init() {
     if(lfd == -1)
     {
         perror("socket error");
+        ERRORLOG("socket error");
         exit(1);
     }
 
@@ -85,6 +89,7 @@ void my_server::epoll_init() {
     if(ret == -1)
     {
         perror("bind error");
+        ERRORLOG("bind error");
         exit(1);
     }
 
@@ -93,6 +98,7 @@ void my_server::epoll_init() {
     if(ret == -1)
     {
         perror("listen error");
+        ERRORLOG("listen error");
         exit(1);
     }
 
@@ -103,6 +109,7 @@ void my_server::epoll_init() {
     if(epfd == -1)
     {
         perror("epoll_create");
+        ERRORLOG("epoll create error");
         exit(0);
     }
 
@@ -119,4 +126,15 @@ void my_server::epoll_init() {
 
     struct epoll_event evs[1024];
     size = sizeof(evs) / sizeof(struct epoll_event);
+}
+
+void my_server::log_init() {
+    	// 定义日志配置项
+    LogConfig conf = {
+        .level = "trace",
+        .path  = "logger.log",
+        .size  = 5 * 1024 * 1024,
+        .count = 10,
+    };
+    INITLOG(conf);
 }
