@@ -34,6 +34,7 @@ void my_server::mainLoop() {
             int sockfd = events[i].data.fd;
 
             if (sockfd == lfd) {
+                // INFOLOG("new connect");
                 // 建立新连接
                 int cfd = accept(sockfd, NULL, NULL);
                 int flag = fcntl(cfd, F_GETFL);
@@ -43,19 +44,19 @@ void my_server::mainLoop() {
                 ev.events = EPOLLIN | EPOLLET;
                 ev.data.fd = cfd;
                 ret = epoll_ctl(epfd, EPOLL_CTL_ADD, cfd, &ev);
-            // } else if (events[i].events & (EPOLLRDHUP | EPOLLHUP | EPOLLERR)) {
-            //     // 服务器端关闭连接
-            //     printf("客户端断开了连接...\n");
-            //     // 将这个文件描述符从epoll模型中删除
-            //     epoll_ctl(epfd, EPOLL_CTL_DEL, sockfd, NULL);
-            //     close(sockfd);
+            } else if (events[i].events & (EPOLLRDHUP | EPOLLHUP | EPOLLERR)) {
+                // 服务器端关闭连接
+                printf("客户端断开了连接...\n");
+                // 将这个文件描述符从epoll模型中删除
+                epoll_ctl(epfd, EPOLL_CTL_DEL, sockfd, NULL);
+                close(sockfd);
             } else if (events[i].events & EPOLLIN) {
                 // 读事件
                 m_thread_pool->manager(sockfd, 1, epfd);
-                m_thread_pool->manager(sockfd, 0, epfd);
+                // m_thread_pool->manager(sockfd, 0, epfd);
             } else {
                 // 写事件
-                m_thread_pool->manager(sockfd, 0);
+                // m_thread_pool->manager(sockfd, 0);
             }
         }
     }

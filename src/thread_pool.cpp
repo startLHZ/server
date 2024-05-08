@@ -64,7 +64,7 @@ void* thread_pool::worker(void* arg) {
         locker.unlock();
         
         curTask.function(curTask.fd, curTask.epfd);
-        INFOLOG("worker get task");
+        // INFOLOG("worker get task");
 
         locker.lock();
         pool->busyNum --;
@@ -77,7 +77,7 @@ void thread_pool::add_task(Task task) {
     // std::unique_lock<std::mutex> locker(pool_mtx, std::defer_lock);
     // locker.lock();
     taskQ->add_task_Q(task);
-    INFOLOG("taskQueue add task");
+    // INFOLOG("taskQueue add task");
     // locker.unlock();
     notEmpty.notify_one();
 }
@@ -92,7 +92,7 @@ void taskRead(int arg, int epfd) {
         int len = recv(sockfd, buf, sizeof(buf), 0);
         if(len == 0) {
             // 非阻塞模式下和阻塞模式是一样的 => 判断对方是否断开连接
-            INFOLOG("client close");
+            // INFOLOG("client close");
             // 将这个文件描述符从epoll模型中删除
             epoll_ctl(epfd, EPOLL_CTL_DEL, sockfd, NULL);
             close(sockfd);
@@ -100,9 +100,9 @@ void taskRead(int arg, int epfd) {
         } else if (len > 0) {
             // 通信
             // 接收的数据打印到终端
-            write(STDOUT_FILENO, buf, len);
-            std::cout << std::endl;
-            INFOLOG("client write");
+            // write(STDOUT_FILENO, buf, len);
+            // std::cout << std::endl;
+            // INFOLOG("client write");
             // // 发送数据
             // send(curfd, buf, len, 0);
         } else {

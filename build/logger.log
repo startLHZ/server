@@ -1,21 +1,140 @@
-[2024-04-30 09:34:08.916] [info] [thread 4922] [server.cpp my_server:22] server init complete!
-[2024-04-30 09:36:51.762] [info] [thread 5087] [server.cpp my_server:22] server init complete!
-[2024-04-30 09:37:30.698] [info] [thread 5091] [thread_pool.cpp taskRead:93] 用户断开连接
-[2024-05-07 12:43:52.232] [info] [thread 9971] [server.cpp my_server:22] server init complete!
-[2024-05-07 12:44:02.977] [info] [thread 9972] [thread_pool.cpp taskRead:103] client write
-[2024-05-07 12:44:47.816] [info] [thread 10152] [server.cpp my_server:22] server init complete!
-[2024-05-07 12:44:53.592] [info] [thread 10153] [thread_pool.cpp taskRead:103] client write
-[2024-05-07 12:44:54.593] [info] [thread 10155] [thread_pool.cpp taskRead:103] client write
-[2024-05-07 12:44:55.593] [info] [thread 10157] [thread_pool.cpp taskRead:103] client write
-[2024-05-07 12:44:56.594] [info] [thread 10159] [thread_pool.cpp taskRead:103] client write
-[2024-05-07 12:44:59.332] [info] [thread 10161] [thread_pool.cpp taskRead:103] client write
-[2024-05-07 12:45:14.996] [info] [thread 10318] [server.cpp my_server:22] server init complete!
-[2024-05-07 12:45:17.532] [info] [thread 10319] [thread_pool.cpp taskRead:103] client write
-[2024-05-07 12:47:54.888] [info] [thread 10509] [server.cpp my_server:22] server init complete!
-[2024-05-07 12:48:00.413] [info] [thread 10512] [thread_pool.cpp taskRead:103] client write
-[2024-05-07 12:48:01.864] [info] [thread 10514] [thread_pool.cpp taskRead:93] client close
-[2024-05-07 12:55:59.700] [info] [thread 10828] [server.cpp my_server:22] server init complete!
-[2024-05-07 12:56:05.976] [info] [thread 10829] [thread_pool.cpp taskRead:103] client write
-[2024-05-07 12:56:08.977] [info] [thread 10831] [thread_pool.cpp taskRead:103] client write
-[2024-05-07 12:56:14.797] [info] [thread 10833] [thread_pool.cpp taskRead:93] client close
-[2024-05-07 13:29:36.310] [info] [thread 11155] [server.cpp my_server:22] server init complete!
+[2024-05-08 14:21:33.537] [info] [thread 5653] [server.cpp my_server:22] server init complete!
+[2024-05-08 14:21:35.316] [info] [thread 5664] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.318] [info] [thread 5655] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.318] [info] [thread 5655] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.318] [info] [thread 5664] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.318] [info] [thread 5655] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.318] [info] [thread 5664] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.318] [info] [thread 5664] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.318] [info] [thread 5664] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.318] [info] [thread 5661] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.318] [info] [thread 5660] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.318] [info] [thread 5658] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.318] [info] [thread 5660] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.318] [info] [thread 5662] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.318] [info] [thread 5664] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.318] [info] [thread 5662] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.318] [info] [thread 5664] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.318] [info] [thread 5662] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.318] [info] [thread 5657] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.318] [info] [thread 5662] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.318] [info] [thread 5657] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.318] [info] [thread 5661] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.318] [info] [thread 5663] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.318] [info] [thread 5654] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.318] [info] [thread 5655] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.318] [info] [thread 5663] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.318] [info] [thread 5657] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.318] [info] [thread 5655] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.318] [info] [thread 5659] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.318] [info] [thread 5661] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.319] [info] [thread 5657] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.319] [info] [thread 5657] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.319] [info] [thread 5657] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.319] [info] [thread 5657] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.319] [info] [thread 5657] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.319] [info] [thread 5657] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.319] [info] [thread 5657] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.319] [info] [thread 5657] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.319] [info] [thread 5657] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.319] [info] [thread 5658] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.318] [info] [thread 5655] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.319] [info] [thread 5658] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.319] [info] [thread 5654] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.319] [info] [thread 5655] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.319] [info] [thread 5661] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.319] [info] [thread 5664] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.319] [info] [thread 5659] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.319] [info] [thread 5661] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.319] [info] [thread 5661] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.319] [info] [thread 5661] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.319] [info] [thread 5663] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.319] [info] [thread 5663] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.319] [info] [thread 5663] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.319] [info] [thread 5663] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.319] [info] [thread 5663] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.318] [info] [thread 5662] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.319] [info] [thread 5659] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.319] [info] [thread 5664] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5662] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5659] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.319] [info] [thread 5658] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5660] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5659] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5658] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5660] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5654] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5660] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.319] [info] [thread 5655] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5660] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5660] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5655] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5660] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5655] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5660] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5655] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5660] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.319] [info] [thread 5663] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5655] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5654] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5659] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5661] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5660] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5659] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5661] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5664] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5660] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5655] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5660] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5664] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5661] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5655] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5663] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5658] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5662] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5654] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5661] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5654] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5654] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.321] [info] [thread 5654] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.321] [info] [thread 5654] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5658] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.321] [info] [thread 5658] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.321] [info] [thread 5661] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.321] [error] [thread 5654] [thread_pool.cpp taskRead:114] recv error!
+[2024-05-08 14:21:36.320] [info] [thread 5659] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.321] [info] [thread 5661] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5664] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.321] [info] [thread 5664] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.321] [info] [thread 5664] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.319] [info] [thread 5657] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.320] [info] [thread 5660] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:21:36.321] [info] [thread 5660] [thread_pool.cpp taskRead:95] client close
+[2024-05-08 14:22:27.227] [info] [thread 5730] [server.cpp my_server:22] server init complete!
+[2024-05-08 14:22:29.196] [error] [thread 5739] [thread_pool.cpp taskRead:114] recv error!
+[2024-05-08 14:22:37.537] [info] [thread 5752] [server.cpp my_server:22] server init complete!
+[2024-05-08 14:22:43.307] [error] [thread 5761] [thread_pool.cpp taskRead:114] recv error!
+[2024-05-08 14:23:23.338] [info] [thread 5824] [server.cpp my_server:22] server init complete!
+[2024-05-08 14:23:27.277] [error] [thread 5833] [thread_pool.cpp taskRead:114] recv error!
+[2024-05-08 14:27:37.935] [info] [thread 4347] [server.cpp my_server:22] server init complete!
+[2024-05-08 14:27:44.571] [error] [thread 4356] [thread_pool.cpp taskRead:114] recv error!
+[2024-05-08 14:28:59.282] [info] [thread 4416] [server.cpp my_server:22] server init complete!
+[2024-05-08 14:29:01.371] [error] [thread 4425] [thread_pool.cpp taskRead:114] recv error!
+[2024-05-08 14:30:57.763] [info] [thread 4520] [server.cpp my_server:22] server init complete!
+[2024-05-08 14:31:00.639] [error] [thread 4527] [thread_pool.cpp taskRead:114] recv error!
+[2024-05-08 14:39:27.060] [info] [thread 3740] [server.cpp my_server:22] server init complete!
+[2024-05-08 14:39:36.431] [error] [thread 3743] [thread_pool.cpp taskRead:114] recv error!
+[2024-05-08 14:40:01.235] [info] [thread 3844] [server.cpp my_server:22] server init complete!
+[2024-05-08 14:40:04.605] [error] [thread 3849] [thread_pool.cpp taskRead:114] recv error!
+[2024-05-08 14:40:49.384] [info] [thread 3961] [server.cpp my_server:22] server init complete!
+[2024-05-08 14:41:28.778] [error] [thread 3970] [thread_pool.cpp taskRead:114] recv error!
+[2024-05-08 14:41:35.564] [info] [thread 4155] [server.cpp my_server:22] server init complete!
+[2024-05-08 14:42:04.592] [error] [thread 4161] [thread_pool.cpp taskRead:114] recv error!
+[2024-05-08 14:42:11.067] [info] [thread 4298] [server.cpp my_server:22] server init complete!
+[2024-05-08 14:42:24.628] [error] [thread 4300] [thread_pool.cpp taskRead:114] recv error!
+[2024-05-08 14:42:38.804] [info] [thread 4379] [server.cpp my_server:22] server init complete!
+[2024-05-08 14:42:56.171] [error] [thread 4387] [thread_pool.cpp taskRead:114] recv error!
+[2024-05-08 14:43:04.723] [info] [thread 4454] [server.cpp my_server:22] server init complete!
+[2024-05-08 14:43:13.995] [error] [thread 4460] [thread_pool.cpp taskRead:114] recv error!
+[2024-05-08 14:43:27.204] [info] [thread 4526] [server.cpp my_server:22] server init complete!
+[2024-05-08 14:43:46.131] [error] [thread 4535] [thread_pool.cpp taskRead:114] recv error!
