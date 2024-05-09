@@ -138,3 +138,38 @@
 [2024-05-08 14:43:13.995] [error] [thread 4460] [thread_pool.cpp taskRead:114] recv error!
 [2024-05-08 14:43:27.204] [info] [thread 4526] [server.cpp my_server:22] server init complete!
 [2024-05-08 14:43:46.131] [error] [thread 4535] [thread_pool.cpp taskRead:114] recv error!
+[2024-05-09 14:57:49.400] [info] [thread 4877] [server.cpp my_server:22] server init complete!
+[2024-05-09 14:58:16.215] [error] [thread 4889] [thread_pool.cpp taskRead:114] recv error!
+[2024-05-09 14:58:16.215] [error] [thread 4896] [thread_pool.cpp taskRead:114] recv error!
+[2024-05-09 15:14:40.761] [info] [thread 5219] [server.cpp my_server:22] server init complete!
+[2024-05-09 15:15:23.367] [error] [thread 5227] [thread_pool.cpp taskRead:114] recv error!
+[2024-05-09 15:15:45.176] [info] [thread 5687] [server.cpp my_server:22] server init complete!
+[2024-05-09 15:15:48.816] [error] [thread 5706] [thread_pool.cpp taskRead:114] recv error!
+[2024-05-09 15:16:24.149] [info] [thread 6058] [server.cpp my_server:22] server init complete!
+[2024-05-09 15:16:30.971] [error] [thread 6074] [thread_pool.cpp taskRead:114] recv error!
+[2024-05-09 15:17:22.575] [info] [thread 6463] [server.cpp my_server:22] server init complete!
+[2024-05-09 15:18:53.582] [error] [thread 6472] [thread_pool.cpp taskRead:114] recv error!
+[2024-05-09 15:19:56.552] [info] [thread 6847] [server.cpp my_server:22] server init complete!
+[2024-05-09 15:20:18.618] [error] [thread 6860] [thread_pool.cpp taskRead:114] recv error!
+[2024-05-09 15:20:35.227] [info] [thread 7747] [server.cpp my_server:22] server init complete!
+[2024-05-09 15:20:37.748] [error] [thread 7759] [thread_pool.cpp taskRead:114] recv error!
+[2024-05-09 15:20:45.068] [info] [thread 8207] [server.cpp my_server:22] server init complete!
+[2024-05-09 15:20:53.139] [error] [thread 8217] [thread_pool.cpp taskRead:114] recv error!
+[2024-05-09 15:20:53.139] [error] [thread 8218] [thread_pool.cpp taskRead:114] recv error!
+[2024-05-09 15:21:01.867] [info] [thread 8611] [server.cpp my_server:22] server init complete!
+[2024-05-09 15:21:08.639] [error] [thread 8612] [thread_pool.cpp taskRead:114] recv error!
+[2024-05-09 15:21:08.639] [error] [thread 8615] [thread_pool.cpp taskRead:114] recv error!
+[2024-05-09 15:21:27.486] [info] [thread 8915] [server.cpp my_server:22] server init complete!
+[2024-05-09 15:21:30.758] [error] [thread 8924] [thread_pool.cpp taskRead:114] recv error!
+[2024-05-09 15:21:53.804] [info] [thread 9075] [server.cpp my_server:22] server init complete!
+[2024-05-09 15:21:58.807] [error] [thread 9076] [thread_pool.cpp taskRead:114] recv error!
+[2024-05-09 15:22:23.205] [info] [thread 9325] [server.cpp my_server:22] server init complete!
+[2024-05-09 15:22:26.190] [error] [thread 9343] [thread_pool.cpp taskRead:114] recv error!
+[2024-05-09 15:22:40.351] [info] [thread 9449] [server.cpp my_server:22] server init complete!
+[2024-05-09 15:22:43.122] [error] [thread 9451] [thread_pool.cpp taskRead:114] recv error!
+[2024-05-09 15:24:19.736] [info] [thread 9708] [server.cpp my_server:22] server init complete!
+[2024-05-09 15:24:24.289] [error] [thread 9722] [thread_pool.cpp taskRead:114] recv error!
+[2024-05-09 15:25:18.890] [info] [thread 9880] [server.cpp my_server:22] server init complete!
+[2024-05-09 15:25:25.749] [error] [thread 9882] [thread_pool.cpp taskRead:114] recv error!
+[2024-05-09 15:25:49.202] [info] [thread 10032] [server.cpp my_server:22] server init complete!
+[2024-05-09 15:25:52.198] [error] [thread 10048] [thread_pool.cpp taskRead:114] recv error!

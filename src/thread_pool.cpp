@@ -26,7 +26,7 @@ thread_pool::thread_pool() : shutdown(false), busyNum(0), aliveNum(0), minNum(10
     // threadIDs.push_back(std::thread(manager,this));
     // aliveNum ++;
     aliveNum += 10;
-    for (int i = 0; i < 10; ++ i) {
+    for (int i = 0; i < 20; ++ i) {
         threadIDs.push_back(std::thread(&worker, this));
     }       
     locker.unlock();

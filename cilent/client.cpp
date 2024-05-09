@@ -19,7 +19,8 @@ int main()
     struct sockaddr_in addr;
     addr.sin_family = AF_INET;
     addr.sin_port = htons(10002);   // 大端端口
-    inet_pton(AF_INET, "127.0.0.1", &addr.sin_addr.s_addr);
+    // inet_pton(AF_INET, "127.0.0.1", &addr.sin_addr.s_addr);
+    inet_pton(AF_INET, "192.168.0.17", &addr.sin_addr.s_addr);
 
     int ret = connect(fd, (struct sockaddr*)&addr, sizeof(addr));
     if(ret == -1)

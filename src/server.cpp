@@ -76,7 +76,7 @@ void my_server::epoll_init() {
     struct sockaddr_in serv_addr;
     memset(&serv_addr, 0, sizeof(serv_addr));
     serv_addr.sin_family = AF_INET;
-    serv_addr.sin_port = htons(10002);
+    serv_addr.sin_port = htons(10000);
     serv_addr.sin_addr.s_addr = htonl(INADDR_ANY);  // 本地多有的ＩＰ
     // 127.0.0.1
     inet_pton(AF_INET, "127.0.0.1", &serv_addr.sin_addr.s_addr);
