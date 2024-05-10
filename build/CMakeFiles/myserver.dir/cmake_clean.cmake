@@ -5,10 +5,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/myserver.dir/src/main.cpp.o.d"
   "CMakeFiles/myserver.dir/src/server.cpp.o"
   "CMakeFiles/myserver.dir/src/server.cpp.o.d"
-  "CMakeFiles/myserver.dir/src/task_queue.cpp.o"
-  "CMakeFiles/myserver.dir/src/task_queue.cpp.o.d"
-  "CMakeFiles/myserver.dir/src/thread_pool.cpp.o"
-  "CMakeFiles/myserver.dir/src/thread_pool.cpp.o.d"
   "myserver"
   "myserver.pdb"
 )

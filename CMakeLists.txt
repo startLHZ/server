@@ -14,8 +14,6 @@ include_directories(include)
 # 创建可执行文件
 add_executable(myserver 
     src/main.cpp 
-    src/task_queue.cpp 
-    src/thread_pool.cpp 
     src/server.cpp
     src/logger.cpp
 )

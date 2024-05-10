@@ -14,7 +14,7 @@ private:
     bool stop_server;
 
     // pool
-    thread_pool* m_thread_pool;
+    m_thread_pool<int>* server_thread_pool;
     
     // epoll相关
     int lfd = -1;

@@ -5,28 +5,15 @@
 #include <condition_variable>
 // #include "thread_pool.h"
 
-using callback = void (*)(int arg, int epfd);
-
-class Task{
-public:
-    Task(callback func = nullptr, int fd = -1) : function(func), fd(fd), epfd(-1) {};
-    callback function;
-    int fd;
-    int epfd;
-};
-
+template<typename task_type>
 class task_queue
 {
 public:
-    task_queue() {
-
-    };
     // 添加任务
-    void add_task_Q(Task task);
-    // void add_task(callback func, void* arg);
+    void add_task_Q(task_type cfd);
 
     // 取出任务
-    Task takeTask();
+    task_type takeTask();
 
     // 获取当前任务队列个数
     inline int get_task_number() {
@@ -35,7 +22,21 @@ public:
     }
 private:
     /* data */
-    std::mutex m_mtx;
-    std::queue<Task> my_queue;
+    std::queue<task_type> my_queue;
 };
 
+template<typename task_type>
+void task_queue<task_type>::add_task_Q(task_type cfd) {
+    this->my_queue.push(cfd);
+    return ;
+}
+
+template<typename task_type>
+task_type task_queue<task_type>::takeTask() {
+    task_type getTask;
+    if (my_queue.size() > 0) {
+        getTask = my_queue.front();
+        my_queue.pop();
+    }
+    return getTask;
+}

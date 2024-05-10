@@ -6,16 +6,6 @@
 },
 {
   "directory": "/home/lhz/server/build",
-  "command": "/usr/bin/g++  -I/home/lhz/server/include -I/home/lhz/server/lib/spdlog -I/home/lhz/server/lib -g -std=c++17 -pthread -o CMakeFiles/myserver.dir/src/task_queue.cpp.o -c /home/lhz/server/src/task_queue.cpp",
-  "file": "/home/lhz/server/src/task_queue.cpp"
-},
-{
-  "directory": "/home/lhz/server/build",
-  "command": "/usr/bin/g++  -I/home/lhz/server/include -I/home/lhz/server/lib/spdlog -I/home/lhz/server/lib -g -std=c++17 -pthread -o CMakeFiles/myserver.dir/src/thread_pool.cpp.o -c /home/lhz/server/src/thread_pool.cpp",
-  "file": "/home/lhz/server/src/thread_pool.cpp"
-},
-{
-  "directory": "/home/lhz/server/build",
   "command": "/usr/bin/g++  -I/home/lhz/server/include -I/home/lhz/server/lib/spdlog -I/home/lhz/server/lib -g -std=c++17 -pthread -o CMakeFiles/myserver.dir/src/server.cpp.o -c /home/lhz/server/src/server.cpp",
   "file": "/home/lhz/server/src/server.cpp"
 },

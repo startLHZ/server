@@ -200,8 +200,22 @@ CMakeFiles/myserver.dir/src/main.cpp.o: /home/lhz/server/src/main.cpp \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h /home/lhz/server/include/server.h \
- /home/lhz/server/include/logger.h /home/lhz/server/lib/spdlog/spdlog.h \
+ /usr/include/linux/close_range.h /usr/include/c++/11/stdlib.h \
+ /usr/include/x86_64-linux-gnu/sys/stat.h \
+ /usr/include/x86_64-linux-gnu/bits/stat.h \
+ /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
+ /usr/include/x86_64-linux-gnu/bits/statx.h /usr/include/linux/stat.h \
+ /usr/include/linux/types.h /usr/include/x86_64-linux-gnu/asm/types.h \
+ /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
+ /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
+ /usr/include/string.h /usr/include/strings.h /usr/include/arpa/inet.h \
+ /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/bits/in.h \
+ /usr/include/fcntl.h /usr/include/x86_64-linux-gnu/bits/fcntl.h \
+ /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
+ /usr/include/linux/falloc.h /home/lhz/server/src/../include/logger.h \
+ /home/lhz/server/lib/spdlog/spdlog.h \
  /home/lhz/server/lib/spdlog/common.h \
  /home/lhz/server/lib/spdlog/details/null_mutex.h \
  /usr/include/c++/11/atomic /usr/include/c++/11/bits/atomic_base.h \
@@ -221,7 +235,6 @@ CMakeFiles/myserver.dir/src/main.cpp.o: /home/lhz/server/src/main.cpp \
  /home/lhz/server/lib/spdlog/fmt/fmt.h \
  /home/lhz/server/lib/spdlog/fmt/bundled/core.h \
  /usr/include/c++/11/cstddef /usr/include/c++/11/cstring \
- /usr/include/string.h /usr/include/strings.h \
  /usr/include/c++/11/iterator /usr/include/c++/11/bits/stream_iterator.h \
  /home/lhz/server/lib/spdlog/fmt/bundled/format.h \
  /usr/include/c++/11/cmath /usr/include/math.h \
@@ -280,18 +293,7 @@ CMakeFiles/myserver.dir/src/main.cpp.o: /home/lhz/server/src/main.cpp \
  /home/lhz/server/lib/spdlog/details/log_msg-inl.h \
  /home/lhz/server/lib/spdlog/details/os.h \
  /home/lhz/server/lib/spdlog/details/os-inl.h \
- /usr/include/x86_64-linux-gnu/sys/stat.h \
- /usr/include/x86_64-linux-gnu/bits/stat.h \
- /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
- /usr/include/x86_64-linux-gnu/bits/statx.h /usr/include/linux/stat.h \
- /usr/include/linux/types.h /usr/include/x86_64-linux-gnu/asm/types.h \
- /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
- /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
- /usr/include/fcntl.h /usr/include/x86_64-linux-gnu/bits/fcntl.h \
- /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
- /usr/include/linux/falloc.h /usr/include/x86_64-linux-gnu/sys/syscall.h \
+ /usr/include/x86_64-linux-gnu/sys/syscall.h \
  /usr/include/x86_64-linux-gnu/asm/unistd.h \
  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
  /usr/include/x86_64-linux-gnu/bits/syscall.h \
@@ -318,4 +320,5 @@ CMakeFiles/myserver.dir/src/main.cpp.o: /home/lhz/server/src/main.cpp \
  /home/lhz/server/lib/spdlog/details/file_helper-inl.h \
  /home/lhz/server/lib/spdlog/sinks/base_sink.h \
  /home/lhz/server/lib/spdlog/sinks/base_sink-inl.h \
- /home/lhz/server/lib/spdlog/sinks/rotating_file_sink-inl.h
+ /home/lhz/server/lib/spdlog/sinks/rotating_file_sink-inl.h \
+ /home/lhz/server/include/server.h

@@ -11,8 +11,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/lhz/server/src/logger.cpp" "CMakeFiles/myserver.dir/src/logger.cpp.o" "gcc" "CMakeFiles/myserver.dir/src/logger.cpp.o.d"
   "/home/lhz/server/src/main.cpp" "CMakeFiles/myserver.dir/src/main.cpp.o" "gcc" "CMakeFiles/myserver.dir/src/main.cpp.o.d"
   "/home/lhz/server/src/server.cpp" "CMakeFiles/myserver.dir/src/server.cpp.o" "gcc" "CMakeFiles/myserver.dir/src/server.cpp.o.d"
-  "/home/lhz/server/src/task_queue.cpp" "CMakeFiles/myserver.dir/src/task_queue.cpp.o" "gcc" "CMakeFiles/myserver.dir/src/task_queue.cpp.o.d"
-  "/home/lhz/server/src/thread_pool.cpp" "CMakeFiles/myserver.dir/src/thread_pool.cpp.o" "gcc" "CMakeFiles/myserver.dir/src/thread_pool.cpp.o.d"
   )
 
 # Targets to which this target links.

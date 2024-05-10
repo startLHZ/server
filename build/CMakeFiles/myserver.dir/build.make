@@ -83,38 +83,10 @@ CMakeFiles/myserver.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myserver.dir/src/main.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lhz/server/src/main.cpp -o CMakeFiles/myserver.dir/src/main.cpp.s
 
-CMakeFiles/myserver.dir/src/task_queue.cpp.o: CMakeFiles/myserver.dir/flags.make
-CMakeFiles/myserver.dir/src/task_queue.cpp.o: ../src/task_queue.cpp
-CMakeFiles/myserver.dir/src/task_queue.cpp.o: CMakeFiles/myserver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lhz/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/myserver.dir/src/task_queue.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myserver.dir/src/task_queue.cpp.o -MF CMakeFiles/myserver.dir/src/task_queue.cpp.o.d -o CMakeFiles/myserver.dir/src/task_queue.cpp.o -c /home/lhz/server/src/task_queue.cpp
-
-CMakeFiles/myserver.dir/src/task_queue.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/myserver.dir/src/task_queue.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lhz/server/src/task_queue.cpp > CMakeFiles/myserver.dir/src/task_queue.cpp.i
-
-CMakeFiles/myserver.dir/src/task_queue.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myserver.dir/src/task_queue.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lhz/server/src/task_queue.cpp -o CMakeFiles/myserver.dir/src/task_queue.cpp.s
-
-CMakeFiles/myserver.dir/src/thread_pool.cpp.o: CMakeFiles/myserver.dir/flags.make
-CMakeFiles/myserver.dir/src/thread_pool.cpp.o: ../src/thread_pool.cpp
-CMakeFiles/myserver.dir/src/thread_pool.cpp.o: CMakeFiles/myserver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lhz/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/myserver.dir/src/thread_pool.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myserver.dir/src/thread_pool.cpp.o -MF CMakeFiles/myserver.dir/src/thread_pool.cpp.o.d -o CMakeFiles/myserver.dir/src/thread_pool.cpp.o -c /home/lhz/server/src/thread_pool.cpp
-
-CMakeFiles/myserver.dir/src/thread_pool.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/myserver.dir/src/thread_pool.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lhz/server/src/thread_pool.cpp > CMakeFiles/myserver.dir/src/thread_pool.cpp.i
-
-CMakeFiles/myserver.dir/src/thread_pool.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myserver.dir/src/thread_pool.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lhz/server/src/thread_pool.cpp -o CMakeFiles/myserver.dir/src/thread_pool.cpp.s
-
 CMakeFiles/myserver.dir/src/server.cpp.o: CMakeFiles/myserver.dir/flags.make
 CMakeFiles/myserver.dir/src/server.cpp.o: ../src/server.cpp
 CMakeFiles/myserver.dir/src/server.cpp.o: CMakeFiles/myserver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lhz/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/myserver.dir/src/server.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lhz/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/myserver.dir/src/server.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myserver.dir/src/server.cpp.o -MF CMakeFiles/myserver.dir/src/server.cpp.o.d -o CMakeFiles/myserver.dir/src/server.cpp.o -c /home/lhz/server/src/server.cpp
 
 CMakeFiles/myserver.dir/src/server.cpp.i: cmake_force
@@ -128,7 +100,7 @@ CMakeFiles/myserver.dir/src/server.cpp.s: cmake_force
 CMakeFiles/myserver.dir/src/logger.cpp.o: CMakeFiles/myserver.dir/flags.make
 CMakeFiles/myserver.dir/src/logger.cpp.o: ../src/logger.cpp
 CMakeFiles/myserver.dir/src/logger.cpp.o: CMakeFiles/myserver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lhz/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/myserver.dir/src/logger.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lhz/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/myserver.dir/src/logger.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myserver.dir/src/logger.cpp.o -MF CMakeFiles/myserver.dir/src/logger.cpp.o.d -o CMakeFiles/myserver.dir/src/logger.cpp.o -c /home/lhz/server/src/logger.cpp
 
 CMakeFiles/myserver.dir/src/logger.cpp.i: cmake_force
@@ -142,8 +114,6 @@ CMakeFiles/myserver.dir/src/logger.cpp.s: cmake_force
 # Object files for target myserver
 myserver_OBJECTS = \
 "CMakeFiles/myserver.dir/src/main.cpp.o" \
-"CMakeFiles/myserver.dir/src/task_queue.cpp.o" \
-"CMakeFiles/myserver.dir/src/thread_pool.cpp.o" \
 "CMakeFiles/myserver.dir/src/server.cpp.o" \
 "CMakeFiles/myserver.dir/src/logger.cpp.o"
 
@@ -151,13 +121,11 @@ myserver_OBJECTS = \
 myserver_EXTERNAL_OBJECTS =
 
 myserver: CMakeFiles/myserver.dir/src/main.cpp.o
-myserver: CMakeFiles/myserver.dir/src/task_queue.cpp.o
-myserver: CMakeFiles/myserver.dir/src/thread_pool.cpp.o
 myserver: CMakeFiles/myserver.dir/src/server.cpp.o
 myserver: CMakeFiles/myserver.dir/src/logger.cpp.o
 myserver: CMakeFiles/myserver.dir/build.make
 myserver: CMakeFiles/myserver.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lhz/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable myserver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lhz/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable myserver"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/myserver.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

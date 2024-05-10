@@ -201,54 +201,6 @@ src/server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myserver.dir/build.make CMakeFiles/myserver.dir/src/server.cpp.s
 .PHONY : src/server.cpp.s
 
-src/task_queue.o: src/task_queue.cpp.o
-.PHONY : src/task_queue.o
-
-# target to build an object file
-src/task_queue.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myserver.dir/build.make CMakeFiles/myserver.dir/src/task_queue.cpp.o
-.PHONY : src/task_queue.cpp.o
-
-src/task_queue.i: src/task_queue.cpp.i
-.PHONY : src/task_queue.i
-
-# target to preprocess a source file
-src/task_queue.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myserver.dir/build.make CMakeFiles/myserver.dir/src/task_queue.cpp.i
-.PHONY : src/task_queue.cpp.i
-
-src/task_queue.s: src/task_queue.cpp.s
-.PHONY : src/task_queue.s
-
-# target to generate assembly for a file
-src/task_queue.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myserver.dir/build.make CMakeFiles/myserver.dir/src/task_queue.cpp.s
-.PHONY : src/task_queue.cpp.s
-
-src/thread_pool.o: src/thread_pool.cpp.o
-.PHONY : src/thread_pool.o
-
-# target to build an object file
-src/thread_pool.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myserver.dir/build.make CMakeFiles/myserver.dir/src/thread_pool.cpp.o
-.PHONY : src/thread_pool.cpp.o
-
-src/thread_pool.i: src/thread_pool.cpp.i
-.PHONY : src/thread_pool.i
-
-# target to preprocess a source file
-src/thread_pool.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myserver.dir/build.make CMakeFiles/myserver.dir/src/thread_pool.cpp.i
-.PHONY : src/thread_pool.cpp.i
-
-src/thread_pool.s: src/thread_pool.cpp.s
-.PHONY : src/thread_pool.s
-
-# target to generate assembly for a file
-src/thread_pool.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myserver.dir/build.make CMakeFiles/myserver.dir/src/thread_pool.cpp.s
-.PHONY : src/thread_pool.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -267,12 +219,6 @@ help:
 	@echo "... src/server.o"
 	@echo "... src/server.i"
 	@echo "... src/server.s"
-	@echo "... src/task_queue.o"
-	@echo "... src/task_queue.i"
-	@echo "... src/task_queue.s"
-	@echo "... src/thread_pool.o"
-	@echo "... src/thread_pool.i"
-	@echo "... src/thread_pool.s"
 .PHONY : help
 
 
