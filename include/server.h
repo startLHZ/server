@@ -1,6 +1,7 @@
 #pragma once
 #include "thread_pool.h"
 #include "logger.h"
+#include "user.h"
 
 class my_server {
 public:
@@ -12,9 +13,11 @@ public:
 private:
     // basic
     bool stop_server;
+    void dealwithread(int sockfd);
+    void dealwithwrite(int sockfd);
 
     // pool
-    m_thread_pool<int>* server_thread_pool;
+    m_thread_pool<m_user*>* server_thread_pool;
     
     // epoll相关
     int lfd = -1;

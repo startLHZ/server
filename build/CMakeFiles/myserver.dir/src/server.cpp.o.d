@@ -321,4 +321,4 @@ CMakeFiles/myserver.dir/src/server.cpp.o: /home/lhz/server/src/server.cpp \
  /home/lhz/server/lib/spdlog/sinks/base_sink.h \
  /home/lhz/server/lib/spdlog/sinks/base_sink-inl.h \
  /home/lhz/server/lib/spdlog/sinks/rotating_file_sink-inl.h \
- /home/lhz/server/include/server.h
+ /home/lhz/server/include/server.h /home/lhz/server/include/user.h

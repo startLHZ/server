@@ -48,6 +48,10 @@ public:
         return taskQ->get_task_number();
     }
 
+    inline void init_epfe(int fd) {
+        this->
+    }
+
     // 工作的线程任务函数
     static void* worker(void* arg);
 
@@ -65,10 +69,11 @@ private:
     int aliveNum;             //存活线程数
     bool shutdown;    //是不是要销毁线程池，销毁为1，不销毁为0
     int thread_nums;
+    int epfd;//关闭单个用户连接时使用
 public:
     std::mutex pool_mtx;                 //线程池的锁
     std::condition_variable main_condition;
-    int lfdt;
+    
 };
 
 template<typename task_type>
@@ -88,7 +93,7 @@ template<typename task_type>
 m_thread_pool<task_type>::~m_thread_pool() {
     shutdown = true;
     for (int i  = 0; i < threadIDs.size(); ++ i) {
-        notEmpty.notify_one();
+        notEmpty.notify_all();
         if(threadIDs[i].joinable()) {
             threadIDs[i].join(); // 等待任务结束， 前提：线程一定会执行完
         } 
@@ -101,61 +106,21 @@ m_thread_pool<task_type>::~m_thread_pool() {
 template<typename task_type>
 void* m_thread_pool<task_type>::worker(void* arg) {
     m_thread_pool<task_type>* pool = static_cast<m_thread_pool<task_type>*>(arg);
-    
-    // 创建一个epoll模型
-    int epfd = -1;
-    struct epoll_event ev;
-    struct epoll_event events[1024];
-    epfd = epoll_create(100);
-    if(epfd == -1)
-    {
-        perror("epoll_create");
-        ERRORLOG("epoll create error");
-        exit(0);
-    }
-
-    // 往epoll实例中添加需要检测的节点, 现在只有监听的文件描述符
-    ev.events = EPOLLIN;    // 检测lfd读读缓冲区是否有数据
-    ev.data.fd = pool->lfdt;
-    int ret = epoll_ctl(epfd, EPOLL_CTL_ADD, pool->lfdt, &ev);
-    if(ret == -1)
-    {
-        perror("epoll_ctl");
-        exit(0);
-    }
-
-    struct epoll_event evs[1024];
-    int size = sizeof(evs) / sizeof(struct epoll_event);
-
     while (1)
     {
-        std::unique_lock<std::mutex> locker(pool->pool_mtx, std::defer_lock);
-        if (locker.try_lock()) {
-            int cfd = pool->taskQ->takeTask();
-            ev.events = EPOLLIN | EPOLLET;
-            ev.data.fd = cfd;
-            ret = epoll_ctl(epfd, EPOLL_CTL_ADD, cfd, &ev);
-            locker.unlock();
+        std::unique_lock<std::mutex> locker(pool->pool_mtx);
+        while (pool->get_taskQ_size() == 0) {
+            pool->notEmpty.wait(locker);
+            // 是否销毁线程
         }
+        task_type task = pool->taskQ->takeTask();
+        locker.unlock();
 
-        int number = epoll_wait(epfd, events, size, -1);
-        for (int i = 0; i < number; i ++) {
-            int sockfd = events[i].data.fd;
-
-            if (sockfd == pool->lfdt) {
-                // 建立新连接
-            } else if (events[i].events & (EPOLLRDHUP | EPOLLHUP | EPOLLERR)) {
-                // 服务器端关闭连接
-                epoll_ctl(epfd, EPOLL_CTL_DEL, sockfd, NULL);
-                close(sockfd);
-            } else if (events[i].events & EPOLLIN) {
-                // 读事件
-                void taskRead(int sockfd, int epfd);
-                // m_thread_pool->manager(sockfd, 0, epfd);
-            } else {
-                // 写事件
-                // m_thread_pool->manager(sockfd, 0);
-            }
+        if (task->state == 0) {
+            pool->taskRead(task->sockfd, -1);
+            pool->taskWrite(task->sockfd, -1);
+        } else {
+            pool->taskWrite(task->sockfd, -1);
         }
     }
 }
@@ -170,11 +135,11 @@ void m_thread_pool<task_type>::taskRead(int arg, int epfd) {
     {
         int len = recv(sockfd, buf, sizeof(buf), 0);
         if(len == 0) {
-            // 非阻塞模式下和阻塞模式是一样的 => 判断对方是否断开连接
-            // 将这个文件描述符从epoll模型中删除
-            epoll_ctl(epfd, EPOLL_CTL_DEL, sockfd, NULL);
-            close(sockfd);
-            // INFOLOG("client close");
+            // // 非阻塞模式下和阻塞模式是一样的 => 判断对方是否断开连接
+            // // 将这个文件描述符从epoll模型中删除
+            // epoll_ctl(epfd, EPOLL_CTL_DEL, sockfd, NULL);
+            // close(sockfd);
+            // // INFOLOG("client close");
             break;
         } else if (len > 0) {
             // 通信
