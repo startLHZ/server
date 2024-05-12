@@ -1,0 +1,1960 @@
+[2024-05-12 23:08:34.978] [info] [thread 77925] [server.cpp my_server:23] server init complete!
+[2024-05-12 23:09:19.871] [info] [thread 77925] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:09:19.874] [info] [thread 77925] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:09:19.874] [info] [thread 77930] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: localhost:10001
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.¿¨_ö˙x
+[2024-05-12 23:09:19.874] [info] [thread 77930] [thread_pool.h taskRead:185] client close
+[2024-05-12 23:09:19.898] [info] [thread 77925] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:09:19.899] [info] [thread 77925] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:09:19.899] [info] [thread 77926] [thread_pool.h taskRead:152] GET /favicon.ico HTTP/1.1
+Host: localhost:10001
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+A¿Ï_ú˙x
+[2024-05-12 23:09:19.899] [info] [thread 77926] [thread_pool.h taskRead:185] client close
+[2024-05-12 23:09:24.700] [info] [thread 77925] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:09:24.700] [info] [thread 77925] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:09:24.700] [info] [thread 77927] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: localhost:10001
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.¿‹ﬂõ˙x
+[2024-05-12 23:09:24.700] [info] [thread 77927] [thread_pool.h taskRead:185] client close
+[2024-05-12 23:11:05.789] [info] [thread 78995] [server.cpp my_server:23] server init complete!
+[2024-05-12 23:11:12.462] [info] [thread 78995] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:11:12.463] [info] [thread 78995] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:11:12.463] [info] [thread 79000] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: localhost:10001
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.
+[2024-05-12 23:11:12.463] [info] [thread 79000] [thread_pool.h taskRead:174] <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>This is the default homepage of the website.</p>
+</body>
+</html>
+
+[2024-05-12 23:11:12.463] [info] [thread 79000] [thread_pool.h taskRead:185] client close
+[2024-05-12 23:11:13.677] [info] [thread 78995] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:11:13.677] [info] [thread 78995] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:11:13.677] [info] [thread 78996] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: localhost:10001
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.
+[2024-05-12 23:11:13.677] [info] [thread 78996] [thread_pool.h taskRead:174] <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>This is the default homepage of the website.</p>
+</body>
+</html>
+
+[2024-05-12 23:11:13.677] [info] [thread 78996] [thread_pool.h taskRead:185] client close
+[2024-05-12 23:11:14.630] [info] [thread 78995] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:11:14.630] [info] [thread 78995] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:11:14.630] [info] [thread 78997] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: localhost:10001
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.
+[2024-05-12 23:11:14.630] [info] [thread 78997] [thread_pool.h taskRead:174] <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>This is the default homepage of the website.</p>
+</body>
+</html>
+
+[2024-05-12 23:11:14.630] [info] [thread 78997] [thread_pool.h taskRead:185] client close
+[2024-05-12 23:11:15.212] [info] [thread 78995] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:11:15.212] [info] [thread 78995] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:11:15.212] [info] [thread 78998] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: localhost:10001
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.
+[2024-05-12 23:11:15.212] [info] [thread 78998] [thread_pool.h taskRead:174] <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>This is the default homepage of the website.</p>
+</body>
+</html>
+
+[2024-05-12 23:11:15.212] [info] [thread 78998] [thread_pool.h taskRead:185] client close
+[2024-05-12 23:11:15.777] [info] [thread 78995] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:11:15.777] [info] [thread 78995] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:11:15.777] [info] [thread 78999] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: localhost:10001
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.
+[2024-05-12 23:11:15.777] [info] [thread 78999] [thread_pool.h taskRead:174] <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>This is the default homepage of the website.</p>
+</body>
+</html>
+
+[2024-05-12 23:11:15.777] [info] [thread 78999] [thread_pool.h taskRead:185] client close
+[2024-05-12 23:11:44.748] [info] [thread 79124] [server.cpp my_server:23] server init complete!
+[2024-05-12 23:11:49.212] [info] [thread 79124] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:11:49.212] [info] [thread 79124] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:11:49.212] [info] [thread 79129] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: localhost:10001
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.
+[2024-05-12 23:11:49.212] [info] [thread 79129] [thread_pool.h taskRead:174] <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>This is the default homepage of the website.</p>
+</body>
+</html>
+
+[2024-05-12 23:13:09.153] [info] [thread 79124] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:13:09.153] [info] [thread 79124] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:13:09.153] [info] [thread 79125] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: localhost:10001
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.
+[2024-05-12 23:13:09.154] [info] [thread 79125] [thread_pool.h taskRead:174] <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>This is the default homepage of the website.</p>
+</body>
+</html>
+
+[2024-05-12 23:13:09.154] [info] [thread 79124] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:13:09.154] [info] [thread 79124] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:13:09.154] [info] [thread 79126] [thread_pool.h taskRead:152] 8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+[2024-05-12 23:13:09.154] [info] [thread 79127] [thread_pool.h taskRead:146] client close
+[2024-05-12 23:13:49.282] [info] [thread 79289] [server.cpp my_server:23] server init complete!
+[2024-05-12 23:13:54.238] [info] [thread 79289] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:13:54.241] [info] [thread 79289] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:13:54.241] [info] [thread 79294] [thread_pool.h taskRead:152] GET /aa HTTP/1.1
+Host: localhost:10001
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=
+[2024-05-12 23:13:54.241] [info] [thread 79294] [thread_pool.h taskRead:174] <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>This is the default homepage of the website.</p>
+</body>
+</html>
+
+[2024-05-12 23:13:59.236] [info] [thread 79289] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:13:59.238] [info] [thread 79289] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:13:59.238] [info] [thread 79290] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: localhost:10001
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.
+[2024-05-12 23:13:59.238] [info] [thread 79290] [thread_pool.h taskRead:174] <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>This is the default homepage of the website.</p>
+</body>
+</html>
+
+[2024-05-12 23:13:59.239] [info] [thread 79289] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:13:59.239] [info] [thread 79291] [thread_pool.h taskRead:152] 0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+[2024-05-12 23:13:59.239] [info] [thread 79291] [thread_pool.h taskRead:174] <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>This is the default homepage of the website.</p>
+</body>
+</html>
+
+[2024-05-12 23:14:57.278] [info] [thread 79374] [server.cpp my_server:23] server init complete!
+[2024-05-12 23:15:00.814] [info] [thread 79374] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:15:00.817] [info] [thread 79374] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:15:00.817] [info] [thread 79379] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: localhost:10001
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.
+[2024-05-12 23:15:00.817] [info] [thread 79379] [thread_pool.h taskRead:174] <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>This is the default homepage of the website.</p>
+</body>
+</html>
+
+[2024-05-12 23:15:05.542] [info] [thread 79374] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:15:07.703] [info] [thread 79374] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:15:07.703] [info] [thread 79374] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:15:07.703] [info] [thread 79376] [thread_pool.h taskRead:152] 8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+[2024-05-12 23:15:07.703] [info] [thread 79376] [thread_pool.h taskRead:174] <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>This is the default homepage of the website.</p>
+</body>
+</html>
+
+[2024-05-12 23:15:07.703] [info] [thread 79375] [thread_pool.h taskRead:152] GET /aa HTTP/1.1
+Host: localhost:10001
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=
+[2024-05-12 23:15:07.704] [info] [thread 79375] [thread_pool.h taskRead:174] <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>This is the default homepage of the website.</p>
+</body>
+</html>
+
+[2024-05-12 23:15:15.064] [info] [thread 79374] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:15:15.065] [info] [thread 79374] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:15:15.065] [info] [thread 79377] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: localhost:10001
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.
+[2024-05-12 23:15:15.065] [info] [thread 79374] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:15:15.065] [info] [thread 79378] [thread_pool.h taskRead:152] 0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+[2024-05-12 23:15:15.065] [info] [thread 79377] [thread_pool.h taskRead:174] <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>This is the default homepage of the website.</p>
+</body>
+</html>
+
+[2024-05-12 23:15:15.065] [info] [thread 79378] [thread_pool.h taskRead:174] <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>This is the default homepage of the website.</p>
+</body>
+</html>
+
+[2024-05-12 23:19:26.093] [info] [thread 79894] [server.cpp my_server:23] server init complete!
+[2024-05-12 23:19:29.951] [info] [thread 79894] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:19:29.953] [info] [thread 79894] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:19:29.953] [info] [thread 79899] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: localhost:10001
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.
+[2024-05-12 23:19:29.953] [info] [thread 79899] [thread_pool.h taskRead:174] <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>awsl</title>
+    </head>
+    <body><br/>
+<br/>
+<div align="center"><font size="5"> <strong>ÂòøÂòøÔºå‰Ω†Êù•Âï¶ÔºåÊõ¥Â§öËµÑÊñôÔºåËØ∑ÂÖ≥Ê≥® ‚Äú‰∏§ÁåøÁ§æ‚Äù Âñî.</strong></font></div>
+<br/>
+<!--<div  align="center">a w s l</div>-->
+<br/>
+<br/>
+<div align="center"><img src="./test1.jpg" title="awsl"/></div>
+</html>
+[2024-05-12 23:21:16.429] [info] [thread 80093] [server.cpp my_server:23] server init complete!
+[2024-05-12 23:21:24.142] [info] [thread 80146] [server.cpp my_server:23] server init complete!
+[2024-05-12 23:21:31.608] [info] [thread 80146] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:21:31.611] [info] [thread 80146] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:21:31.611] [info] [thread 80151] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: localhost:10001
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+[2024-05-12 23:21:31.611] [info] [thread 80151] [thread_pool.h taskRead:174] <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>awsl</title>
+    </head>
+    <body><br/>
+<br/>
+<div align="center"><font size="5"> <strong>ÂòøÂòøÔºå‰Ω†Êù•Âï¶ÔºåÊõ¥Â§öËµÑÊñôÔºåËØ∑ÂÖ≥Ê≥® ‚Äú‰∏§ÁåøÁ§æ‚Äù Âñî.</strong></font></div>
+<br/>
+<!--<div  align="center">a w s l</div>-->
+<br/>
+<br/>
+<div align="center"><img src="./test1.jpg" title="awsl"/></div>
+</html>
+[2024-05-12 23:23:34.316] [info] [thread 80239] [server.cpp my_server:23] server init complete!
+[2024-05-12 23:23:38.492] [info] [thread 80239] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:23:38.494] [info] [thread 80239] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:23:38.494] [info] [thread 80244] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: localhost:10001
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+[2024-05-12 23:23:38.495] [info] [thread 80244] [thread_pool.h taskRead:174] <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>awsl</title>
+    </head>
+    <body><br/>
+<br/>
+<div align="center"><font size="5"> <strong>QQ:1131123492</strong></font></div>
+<br/>
+<!--<div  align="center">a w s l</div>-->
+<br/>
+<br/>
+<div align="center"><img src="./test1.jpg" title="awsl"/></div>
+</html>
+[2024-05-12 23:24:27.812] [info] [thread 80391] [server.cpp my_server:23] server init complete!
+[2024-05-12 23:24:35.417] [info] [thread 80391] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:24:35.420] [info] [thread 80391] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:24:53.895] [info] [thread 80398] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: localhost:10001
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+[2024-05-12 23:25:00.447] [info] [thread 80398] [thread_pool.h taskRead:174] <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>awsl</title>
+    </head>
+    <body><br/>
+<br/>
+<div align="center"><font size="5"> <strong>QQ:1131123492</strong></font></div>
+<br/>
+<!--<div  align="center">a w s l</div>-->
+<br/>
+<br/>
+<div align="center"><img src="./test1.jpg" title="awsl"/></div>
+</html>
+[2024-05-12 23:25:38.912] [info] [thread 80638] [server.cpp my_server:23] server init complete!
+[2024-05-12 23:25:45.030] [info] [thread 80638] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:25:45.033] [info] [thread 80638] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:25:45.033] [info] [thread 80643] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: localhost:10001
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+[2024-05-12 23:25:45.033] [info] [thread 80643] [thread_pool.h taskRead:174] <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>awsl</title>
+    </head>
+    <body><br/>
+<br/>
+<div align="center"><font size="5"> <strong>QQ:1131123492</strong></font></div>
+<br/>
+<!--<div  align="center">a w s l</div>-->
+<br/>
+<br/>
+<div align="center"><img src="./test1.jpg" title="awsl"/></div>
+</html>
+[2024-05-12 23:25:45.033] [info] [thread 80643] [thread_pool.h taskRead:185] client close
+[2024-05-12 23:25:45.043] [info] [thread 80638] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:25:45.043] [info] [thread 80638] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:25:45.043] [info] [thread 80639] [thread_pool.h taskRead:152] GET /favicon.ico HTTP/1.1
+Host: localhost:10001
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: http://localhost:10001/
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+[2024-05-12 23:25:45.043] [info] [thread 80639] [thread_pool.h taskRead:174] <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>awsl</title>
+    </head>
+    <body><br/>
+<br/>
+<div align="center"><font size="5"> <strong>QQ:1131123492</strong></font></div>
+<br/>
+<!--<div  align="center">a w s l</div>-->
+<br/>
+<br/>
+<div align="center"><img src="./test1.jpg" title="awsl"/></div>
+</html>
+[2024-05-12 23:25:45.043] [info] [thread 80639] [thread_pool.h taskRead:185] client close
+[2024-05-12 23:25:47.033] [info] [thread 80638] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:25:47.036] [info] [thread 80638] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:25:47.036] [info] [thread 80640] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: localhost:10001
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+[2024-05-12 23:25:47.036] [info] [thread 80640] [thread_pool.h taskRead:174] <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>awsl</title>
+    </head>
+    <body><br/>
+<br/>
+<div align="center"><font size="5"> <strong>QQ:1131123492</strong></font></div>
+<br/>
+<!--<div  align="center">a w s l</div>-->
+<br/>
+<br/>
+<div align="center"><img src="./test1.jpg" title="awsl"/></div>
+</html>
+[2024-05-12 23:25:47.036] [info] [thread 80640] [thread_pool.h taskRead:185] client close
+[2024-05-12 23:25:47.045] [info] [thread 80638] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:25:47.045] [info] [thread 80638] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:25:47.046] [info] [thread 80641] [thread_pool.h taskRead:152] GET /favicon.ico HTTP/1.1
+Host: localhost:10001
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: http://localhost:10001/
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+[2024-05-12 23:25:47.046] [info] [thread 80641] [thread_pool.h taskRead:174] <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>awsl</title>
+    </head>
+    <body><br/>
+<br/>
+<div align="center"><font size="5"> <strong>QQ:1131123492</strong></font></div>
+<br/>
+<!--<div  align="center">a w s l</div>-->
+<br/>
+<br/>
+<div align="center"><img src="./test1.jpg" title="awsl"/></div>
+</html>
+[2024-05-12 23:25:47.046] [info] [thread 80641] [thread_pool.h taskRead:185] client close
+[2024-05-12 23:29:04.648] [info] [thread 80776] [server.cpp my_server:23] server init complete!
+[2024-05-12 23:29:06.771] [info] [thread 80776] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:29:06.772] [info] [thread 80776] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:29:06.772] [info] [thread 80781] [thread_pool.h taskRead:176] GET / HTTP/1.1
+Host: localhost:10001
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.¿¨ˇ?x
+[2024-05-12 23:29:16.668] [info] [thread 80776] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:29:16.668] [info] [thread 80777] [thread_pool.h taskRead:176] 0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.¿Ï@x
+[2024-05-12 23:29:19.264] [info] [thread 80776] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:29:19.267] [info] [thread 80776] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:29:19.267] [info] [thread 80778] [thread_pool.h taskRead:176] GET / HTTP/1.1
+Host: localhost:10001
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.¿‹ˇ
+[2024-05-12 23:29:44.813] [error] [thread 80852] [server.cpp epoll_init:102] bind error
+[2024-05-12 23:32:41.570] [error] [thread 81173] [server.cpp epoll_init:102] bind error
+[2024-05-12 23:33:08.862] [error] [thread 81311] [server.cpp epoll_init:102] bind error
+[2024-05-12 23:34:16.948] [info] [thread 82095] [server.cpp my_server:23] server init complete!
+[2024-05-12 23:34:32.553] [info] [thread 82095] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:34:32.553] [info] [thread 82095] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:34:32.553] [info] [thread 82100] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: localhost:10000
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.¿¨ø÷4|
+[2024-05-12 23:34:39.292] [info] [thread 82095] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:34:39.292] [info] [thread 82096] [thread_pool.h taskRead:152] 0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.¿Ïøÿ4|
+[2024-05-12 23:34:52.976] [info] [thread 82095] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:34:52.979] [info] [thread 82095] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:34:52.979] [info] [thread 82097] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: localhost:10000
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.¿‹?ÿ4|
+[2024-05-12 23:35:16.039] [info] [thread 83012] [server.cpp my_server:23] server init complete!
+[2024-05-12 23:35:44.232] [info] [thread 83012] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:35:44.235] [info] [thread 83012] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:35:54.964] [info] [thread 83016] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: localhost:10000
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.¿Ï˜ˇ
+[2024-05-12 23:36:40.260] [info] [thread 83231] [server.cpp my_server:23] server init complete!
+[2024-05-12 23:36:42.923] [info] [thread 83231] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:36:42.926] [info] [thread 83231] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:36:56.245] [info] [thread 83239] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: localhost:10000
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.¿¨ıˇ
+[2024-05-12 23:37:32.648] [info] [thread 83425] [server.cpp my_server:23] server init complete!
+[2024-05-12 23:37:43.082] [info] [thread 83425] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:37:43.082] [info] [thread 83425] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:37:51.757] [info] [thread 83429] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: localhost:10000
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.¿Ï˜ˇ
+[2024-05-12 23:38:08.673] [info] [thread 83619] [server.cpp my_server:23] server init complete!
+[2024-05-12 23:38:14.846] [info] [thread 83619] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:38:14.846] [info] [thread 83619] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:38:20.494] [info] [thread 83623] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: localhost:10000
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.¿Ï˜ˇ
+[2024-05-12 23:38:24.581] [info] [thread 83623] [thread_pool.h taskRead:152] 0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.¿Ï˜ˇ
+[2024-05-12 23:38:27.812] [info] [thread 83623] [thread_pool.h taskRead:152] 8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Upgrade-Insecure-Req¿Ï˜ˇ
+[2024-05-12 23:38:31.245] [info] [thread 83623] [thread_pool.h taskRead:152] uests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+Upgrade-Insecure-Req¿Ï˜ˇ
+[2024-05-12 23:39:08.338] [info] [thread 83623] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492˜ˇ
+[2024-05-12 23:39:08.355] [info] [thread 83619] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:39:08.355] [info] [thread 83619] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:39:19.406] [info] [thread 83745] [server.cpp my_server:23] server init complete!
+[2024-05-12 23:39:22.796] [info] [thread 83745] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:39:22.800] [info] [thread 83745] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:39:22.800] [info] [thread 83748] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: localhost:10000
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.¿Ãø¶⁄p
+[2024-05-12 23:39:22.800] [info] [thread 83748] [thread_pool.h taskRead:152] 0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.¿Ãø¶⁄p
+[2024-05-12 23:39:22.800] [info] [thread 83748] [thread_pool.h taskRead:152] 8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Upgrade-Insecure-Req¿Ãø¶⁄p
+[2024-05-12 23:39:22.800] [info] [thread 83748] [thread_pool.h taskRead:152] uests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+Upgrade-Insecure-Req¿Ãø¶⁄p
+[2024-05-12 23:39:22.800] [info] [thread 83748] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ø¶⁄p
+[2024-05-12 23:39:22.813] [info] [thread 83745] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:39:22.813] [info] [thread 83745] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:39:22.813] [info] [thread 83749] [thread_pool.h taskRead:152] GET /favicon.ico HTTP/1.1
+Host: localhost:10000
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 F¿º?¶⁄p
+[2024-05-12 23:39:22.813] [info] [thread 83749] [thread_pool.h taskRead:152] irefox/124.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+A¿º?¶⁄p
+[2024-05-12 23:39:22.813] [info] [thread 83749] [thread_pool.h taskRead:152] ccept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: http://localhost:10000/
+Sec-Fetch-Dest: image
+Sec-Fetch-Mo¿º?¶⁄p
+[2024-05-12 23:39:22.813] [info] [thread 83749] [thread_pool.h taskRead:152] de: no-cors
+Sec-Fetch-Site: same-origin
+
+n: keep-alive
+Referer: http://localhost:10000/
+Sec-Fetch-Dest: image
+Sec-Fetch-Mo¿º?¶⁄p
+[2024-05-12 23:39:22.813] [info] [thread 83749] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492?¶⁄p
+[2024-05-12 23:43:25.323] [info] [thread 3740] [server.cpp my_server:23] server init complete!
+[2024-05-12 23:44:57.479] [info] [thread 3835] [server.cpp my_server:23] server init complete!
+[2024-05-12 23:45:02.520] [info] [thread 3835] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:45:02.521] [info] [thread 3835] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:45:02.521] [info] [thread 3840] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-A¿¨ﬂ[·}
+[2024-05-12 23:45:02.521] [info] [thread 3840] [thread_pool.h taskRead:152] gent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept: t¿¨ﬂ[·}
+[2024-05-12 23:45:02.521] [info] [thread 3840] [thread_pool.h taskRead:152] ext/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿¨ﬂ[·}
+[2024-05-12 23:45:02.521] [info] [thread 3840] [thread_pool.h taskRead:152] ;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿¨ﬂ[·}
+[2024-05-12 23:45:02.521] [info] [thread 3840] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ﬂ[·}
+[2024-05-12 23:45:03.522] [info] [thread 3835] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:45:03.542] [info] [thread 3835] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:45:03.542] [info] [thread 3836] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-A¿Ïﬂ]·}
+[2024-05-12 23:45:03.542] [info] [thread 3836] [thread_pool.h taskRead:152] gent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept: t¿Ïﬂ]·}
+[2024-05-12 23:45:03.542] [info] [thread 3836] [thread_pool.h taskRead:152] ext/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿Ïﬂ]·}
+[2024-05-12 23:45:03.542] [info] [thread 3836] [thread_pool.h taskRead:152] ;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿Ïﬂ]·}
+[2024-05-12 23:45:03.542] [info] [thread 3836] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ﬂ]·}
+[2024-05-12 23:45:03.543] [info] [thread 3835] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:45:03.543] [info] [thread 3835] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:45:05.537] [info] [thread 3835] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:45:05.537] [info] [thread 3837] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-A¿‹_]·}
+[2024-05-12 23:45:05.537] [info] [thread 3837] [thread_pool.h taskRead:152] gent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept: t¿‹_]·}
+[2024-05-12 23:45:05.537] [info] [thread 3837] [thread_pool.h taskRead:152] ext/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿‹_]·}
+[2024-05-12 23:45:05.537] [info] [thread 3837] [thread_pool.h taskRead:152] ;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿‹_]·}
+[2024-05-12 23:45:05.537] [info] [thread 3837] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492_]·}
+[2024-05-12 23:45:05.538] [info] [thread 3835] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:45:10.557] [info] [thread 3835] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:45:10.557] [info] [thread 3838] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-A¿Ãﬂ\·}
+[2024-05-12 23:45:10.557] [info] [thread 3838] [thread_pool.h taskRead:152] gent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept: t¿Ãﬂ\·}
+[2024-05-12 23:45:10.557] [info] [thread 3838] [thread_pool.h taskRead:152] ext/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿Ãﬂ\·}
+[2024-05-12 23:45:10.557] [info] [thread 3838] [thread_pool.h taskRead:152] ;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿Ãﬂ\·}
+[2024-05-12 23:45:10.557] [info] [thread 3838] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ﬂ\·}
+[2024-05-12 23:45:10.558] [info] [thread 3835] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:45:35.148] [info] [thread 3835] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:45:35.148] [info] [thread 3839] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-A¿º_\·}
+[2024-05-12 23:45:35.148] [info] [thread 3839] [thread_pool.h taskRead:152] gent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept: t¿º_\·}
+[2024-05-12 23:45:35.148] [info] [thread 3839] [thread_pool.h taskRead:152] ext/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿º_\·}
+[2024-05-12 23:45:35.148] [info] [thread 3839] [thread_pool.h taskRead:152] ;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿º_\·}
+[2024-05-12 23:45:35.148] [info] [thread 3839] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492_\·}
+[2024-05-12 23:45:35.150] [info] [thread 3835] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:45:59.385] [info] [thread 3835] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:45:59.385] [info] [thread 3840] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-A¿¨ﬂ[·}
+[2024-05-12 23:45:59.385] [info] [thread 3840] [thread_pool.h taskRead:152] gent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept: t¿¨ﬂ[·}
+[2024-05-12 23:45:59.385] [info] [thread 3840] [thread_pool.h taskRead:152] ext/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿¨ﬂ[·}
+[2024-05-12 23:45:59.385] [info] [thread 3840] [thread_pool.h taskRead:152] ;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿¨ﬂ[·}
+[2024-05-12 23:45:59.385] [info] [thread 3840] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ﬂ[·}
+[2024-05-12 23:45:59.386] [info] [thread 3835] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:46:02.428] [info] [thread 3835] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:46:02.428] [info] [thread 3836] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-A¿Ïﬂ]·}
+[2024-05-12 23:46:02.428] [info] [thread 3836] [thread_pool.h taskRead:152] gent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept: t¿Ïﬂ]·}
+[2024-05-12 23:46:02.428] [info] [thread 3836] [thread_pool.h taskRead:152] ext/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿Ïﬂ]·}
+[2024-05-12 23:46:02.428] [info] [thread 3836] [thread_pool.h taskRead:152] ;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿Ïﬂ]·}
+[2024-05-12 23:46:02.428] [info] [thread 3836] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ﬂ]·}
+[2024-05-12 23:46:02.429] [info] [thread 3835] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:46:44.956] [info] [thread 3906] [server.cpp my_server:23] server init complete!
+[2024-05-12 23:47:04.915] [info] [thread 4627] [server.cpp my_server:23] server init complete!
+[2024-05-12 23:47:14.628] [info] [thread 4627] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:47:14.629] [info] [thread 4627] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:47:14.629] [info] [thread 4632] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-A¿¨ﬂx
+[2024-05-12 23:47:14.629] [info] [thread 4632] [thread_pool.h taskRead:152] gent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept: t¿¨ﬂx
+[2024-05-12 23:47:14.629] [info] [thread 4632] [thread_pool.h taskRead:152] ext/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿¨ﬂx
+[2024-05-12 23:47:14.629] [info] [thread 4632] [thread_pool.h taskRead:152] ;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿¨ﬂx
+[2024-05-12 23:47:14.629] [info] [thread 4627] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:47:14.629] [info] [thread 4632] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ﬂx
+[2024-05-12 23:47:15.639] [info] [thread 4627] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:47:15.639] [info] [thread 4628] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-A¿Ïﬂx
+[2024-05-12 23:47:15.639] [info] [thread 4628] [thread_pool.h taskRead:152] gent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept: t¿Ïﬂx
+[2024-05-12 23:47:15.639] [info] [thread 4628] [thread_pool.h taskRead:152] ext/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿Ïﬂx
+[2024-05-12 23:47:15.639] [info] [thread 4628] [thread_pool.h taskRead:152] ;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿Ïﬂx
+[2024-05-12 23:47:15.639] [info] [thread 4628] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ﬂx
+[2024-05-12 23:47:15.640] [info] [thread 4627] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:47:15.640] [info] [thread 4627] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:47:19.223] [info] [thread 4627] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:47:19.223] [info] [thread 4627] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:47:19.223] [info] [thread 4629] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/1¿‹_x
+[2024-05-12 23:47:19.223] [info] [thread 4629] [thread_pool.h taskRead:152] 24.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q¿‹_x
+[2024-05-12 23:47:19.223] [info] [thread 4629] [thread_pool.h taskRead:152] =0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requ¿‹_x
+[2024-05-12 23:47:19.223] [info] [thread 4629] [thread_pool.h taskRead:152] ests: 1
+
+q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requ¿‹_x
+[2024-05-12 23:47:19.223] [info] [thread 4629] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492_x
+[2024-05-12 23:47:19.250] [info] [thread 4627] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:47:19.250] [info] [thread 4627] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:47:19.250] [info] [thread 4630] [thread_pool.h taskRead:152] GET /favicon.ico HTTP/1.1
+Host: 192.168.0.17:10000
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/2010010¿Ãﬂx
+[2024-05-12 23:47:19.250] [info] [thread 4630] [thread_pool.h taskRead:152] 1 Firefox/124.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2¿Ãﬂx
+[2024-05-12 23:47:19.250] [info] [thread 4630] [thread_pool.h taskRead:152] 
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://192.168.0.17:10000/
+
+h-HK;q=0.5,en-US;q=0.3,en;q=0.2¿Ãﬂx
+[2024-05-12 23:47:19.250] [info] [thread 4630] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ﬂx
+[2024-05-12 23:47:20.651] [info] [thread 4627] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:47:20.651] [info] [thread 4631] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-A¿º_x
+[2024-05-12 23:47:20.651] [info] [thread 4631] [thread_pool.h taskRead:152] gent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept: t¿º_x
+[2024-05-12 23:47:20.651] [info] [thread 4631] [thread_pool.h taskRead:152] ext/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿º_x
+[2024-05-12 23:47:20.651] [info] [thread 4631] [thread_pool.h taskRead:152] ;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿º_x
+[2024-05-12 23:47:20.651] [info] [thread 4631] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492_x
+[2024-05-12 23:47:20.652] [info] [thread 4627] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:47:40.036] [info] [thread 4627] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:47:40.036] [info] [thread 4632] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-A¿¨ﬂx
+[2024-05-12 23:47:40.036] [info] [thread 4632] [thread_pool.h taskRead:152] gent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept: t¿¨ﬂx
+[2024-05-12 23:47:40.036] [info] [thread 4632] [thread_pool.h taskRead:152] ext/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿¨ﬂx
+[2024-05-12 23:47:40.036] [info] [thread 4632] [thread_pool.h taskRead:152] ;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿¨ﬂx
+[2024-05-12 23:47:40.036] [info] [thread 4632] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ﬂx
+[2024-05-12 23:47:40.038] [info] [thread 4627] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:51:16.970] [info] [thread 4894] [server.cpp my_server:23] server init complete!
+[2024-05-12 23:51:17.587] [info] [thread 4894] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:51:17.593] [info] [thread 4894] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:51:17.593] [info] [thread 4899] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-A¿¨ﬂpu
+[2024-05-12 23:51:17.593] [info] [thread 4899] [thread_pool.h taskRead:152] gent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.¿¨ﬂpu
+[2024-05-12 23:51:17.593] [info] [thread 4899] [thread_pool.h taskRead:152] 0.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed¿¨ﬂpu
+[2024-05-12 23:51:17.593] [info] [thread 4899] [thread_pool.h taskRead:152] -exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+
+signed¿¨ﬂpu
+[2024-05-12 23:51:17.593] [info] [thread 4899] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ﬂpu
+[2024-05-12 23:51:17.593] [info] [thread 4894] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:51:18.613] [info] [thread 4894] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:51:18.613] [info] [thread 4895] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-A¿Ïﬂru
+[2024-05-12 23:51:18.613] [info] [thread 4895] [thread_pool.h taskRead:152] gent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.¿Ïﬂru
+[2024-05-12 23:51:18.613] [info] [thread 4895] [thread_pool.h taskRead:152] 0.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed¿Ïﬂru
+[2024-05-12 23:51:18.613] [info] [thread 4895] [thread_pool.h taskRead:152] -exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+
+signed¿Ïﬂru
+[2024-05-12 23:51:18.613] [info] [thread 4894] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:51:18.613] [info] [thread 4895] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ﬂru
+[2024-05-12 23:51:20.112] [info] [thread 4894] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:51:20.112] [info] [thread 4896] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-A¿‹_ru
+[2024-05-12 23:51:20.112] [info] [thread 4896] [thread_pool.h taskRead:152] gent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.¿‹_ru
+[2024-05-12 23:51:20.112] [info] [thread 4896] [thread_pool.h taskRead:152] 0.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed¿‹_ru
+[2024-05-12 23:51:20.112] [info] [thread 4896] [thread_pool.h taskRead:152] -exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+
+signed¿‹_ru
+[2024-05-12 23:51:20.112] [info] [thread 4896] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492_ru
+[2024-05-12 23:51:20.116] [info] [thread 4894] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:51:20.116] [info] [thread 4894] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:51:22.505] [info] [thread 4894] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:51:22.505] [info] [thread 4897] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-A¿Ãﬂqu
+[2024-05-12 23:51:22.505] [info] [thread 4897] [thread_pool.h taskRead:152] gent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.¿Ãﬂqu
+[2024-05-12 23:51:22.505] [info] [thread 4897] [thread_pool.h taskRead:152] 0.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed¿Ãﬂqu
+[2024-05-12 23:51:22.505] [info] [thread 4897] [thread_pool.h taskRead:152] -exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+
+signed¿Ãﬂqu
+[2024-05-12 23:51:22.506] [info] [thread 4897] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ﬂqu
+[2024-05-12 23:51:22.511] [info] [thread 4894] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:51:24.401] [info] [thread 4894] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:51:24.401] [info] [thread 4898] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-A¿º_qu
+[2024-05-12 23:51:24.401] [info] [thread 4898] [thread_pool.h taskRead:152] gent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.¿º_qu
+[2024-05-12 23:51:24.401] [info] [thread 4898] [thread_pool.h taskRead:152] 0.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed¿º_qu
+[2024-05-12 23:51:24.401] [info] [thread 4898] [thread_pool.h taskRead:152] -exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+
+signed¿º_qu
+[2024-05-12 23:51:24.401] [info] [thread 4898] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492_qu
+[2024-05-12 23:51:24.402] [info] [thread 4894] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:51:28.384] [info] [thread 4894] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:51:28.384] [info] [thread 4899] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-A¿¨ﬂpu
+[2024-05-12 23:51:28.384] [info] [thread 4899] [thread_pool.h taskRead:152] gent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.¿¨ﬂpu
+[2024-05-12 23:51:28.384] [info] [thread 4899] [thread_pool.h taskRead:152] 0.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed¿¨ﬂpu
+[2024-05-12 23:51:28.384] [info] [thread 4899] [thread_pool.h taskRead:152] -exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+
+signed¿¨ﬂpu
+[2024-05-12 23:51:28.384] [info] [thread 4899] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ﬂpu
+[2024-05-12 23:51:28.390] [info] [thread 4894] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:51:30.593] [info] [thread 4894] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:51:30.593] [info] [thread 4895] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-A¿Ïﬂru
+[2024-05-12 23:51:30.593] [info] [thread 4895] [thread_pool.h taskRead:152] gent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.¿Ïﬂru
+[2024-05-12 23:51:30.593] [info] [thread 4895] [thread_pool.h taskRead:152] 0.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed¿Ïﬂru
+[2024-05-12 23:51:30.593] [info] [thread 4895] [thread_pool.h taskRead:152] -exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+
+signed¿Ïﬂru
+[2024-05-12 23:51:30.593] [info] [thread 4895] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ﬂru
+[2024-05-12 23:51:30.593] [info] [thread 4894] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:51:31.041] [info] [thread 4894] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:51:31.041] [info] [thread 4896] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-A¿‹_ru
+[2024-05-12 23:51:31.041] [info] [thread 4896] [thread_pool.h taskRead:152] gent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.¿‹_ru
+[2024-05-12 23:51:31.041] [info] [thread 4896] [thread_pool.h taskRead:152] 0.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed¿‹_ru
+[2024-05-12 23:51:31.041] [info] [thread 4896] [thread_pool.h taskRead:152] -exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+
+signed¿‹_ru
+[2024-05-12 23:51:31.041] [info] [thread 4896] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492_ru
+[2024-05-12 23:51:31.042] [info] [thread 4894] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:51:31.185] [info] [thread 4894] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:51:31.185] [info] [thread 4897] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-A¿Ãﬂqu
+[2024-05-12 23:51:31.185] [info] [thread 4897] [thread_pool.h taskRead:152] gent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.¿Ãﬂqu
+[2024-05-12 23:51:31.185] [info] [thread 4897] [thread_pool.h taskRead:152] 0.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed¿Ãﬂqu
+[2024-05-12 23:51:31.185] [info] [thread 4897] [thread_pool.h taskRead:152] -exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+
+signed¿Ãﬂqu
+[2024-05-12 23:51:31.185] [info] [thread 4897] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ﬂqu
+[2024-05-12 23:51:31.185] [info] [thread 4894] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:51:31.318] [info] [thread 4894] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:51:31.318] [info] [thread 4898] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-A¿º_qu
+[2024-05-12 23:51:31.318] [info] [thread 4898] [thread_pool.h taskRead:152] gent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.¿º_qu
+[2024-05-12 23:51:31.318] [info] [thread 4898] [thread_pool.h taskRead:152] 0.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed¿º_qu
+[2024-05-12 23:51:31.318] [info] [thread 4898] [thread_pool.h taskRead:152] -exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+
+signed¿º_qu
+[2024-05-12 23:51:31.318] [info] [thread 4898] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492_qu
+[2024-05-12 23:51:31.319] [info] [thread 4894] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:51:36.335] [info] [thread 4894] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:51:36.335] [info] [thread 4899] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-A¿¨ﬂpu
+[2024-05-12 23:51:36.335] [info] [thread 4899] [thread_pool.h taskRead:152] gent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.¿¨ﬂpu
+[2024-05-12 23:51:36.335] [info] [thread 4899] [thread_pool.h taskRead:152] 0.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed¿¨ﬂpu
+[2024-05-12 23:51:36.335] [info] [thread 4899] [thread_pool.h taskRead:152] -exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+
+signed¿¨ﬂpu
+[2024-05-12 23:51:36.335] [info] [thread 4899] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ﬂpu
+[2024-05-12 23:51:36.337] [info] [thread 4894] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:51:46.517] [info] [thread 4894] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:51:46.517] [info] [thread 4895] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-A¿Ïﬂru
+[2024-05-12 23:51:46.518] [info] [thread 4895] [thread_pool.h taskRead:152] gent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.¿Ïﬂru
+[2024-05-12 23:51:46.518] [info] [thread 4895] [thread_pool.h taskRead:152] 0.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed¿Ïﬂru
+[2024-05-12 23:51:46.518] [info] [thread 4895] [thread_pool.h taskRead:152] -exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+
+signed¿Ïﬂru
+[2024-05-12 23:51:46.518] [info] [thread 4895] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ﬂru
+[2024-05-12 23:51:46.522] [info] [thread 4894] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:57:03.373] [info] [thread 5005] [server.cpp my_server:23] server init complete!
+[2024-05-12 23:57:08.431] [info] [thread 5005] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:57:08.431] [info] [thread 5005] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:57:08.431] [info] [thread 5010] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox¿¨÷¸y
+[2024-05-12 23:57:08.432] [info] [thread 5010] [thread_pool.h taskRead:152] /125.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh¿¨÷¸y
+[2024-05-12 23:57:08.432] [info] [thread 5010] [thread_pool.h taskRead:152] ;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Re¿¨÷¸y
+[2024-05-12 23:57:08.432] [info] [thread 5010] [thread_pool.h taskRead:152] quests: 1
+
+q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Re¿¨÷¸y
+[2024-05-12 23:57:08.432] [info] [thread 5010] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492÷¸y
+[2024-05-12 23:57:08.444] [info] [thread 5005] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:57:08.444] [info] [thread 5005] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:57:08.444] [info] [thread 5006] [thread_pool.h taskRead:152] GET /favicon.ico HTTP/1.1
+Host: 192.168.0.17:10000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100¿Ïÿ¸y
+[2024-05-12 23:57:08.444] [info] [thread 5006] [thread_pool.h taskRead:152] 101 Firefox/125.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0¿Ïÿ¸y
+[2024-05-12 23:57:08.444] [info] [thread 5006] [thread_pool.h taskRead:152] .2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://192.168.0.17:10000/
+
+h-HK;q=0.5,en-US;q=0.3,en;q=0¿Ïÿ¸y
+[2024-05-12 23:57:08.445] [info] [thread 5006] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ÿ¸y
+[2024-05-12 23:57:24.821] [info] [thread 5012] [server.cpp my_server:23] server init complete!
+[2024-05-12 23:57:57.939] [info] [thread 5012] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:57:58.940] [info] [thread 5012] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:57:58.940] [info] [thread 5017] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows¿¨ÅI
+[2024-05-12 23:57:58.940] [info] [thread 5017] [thread_pool.h taskRead:152]  NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 NetType/WIFI MicroMessenger/7.0.20.1¿¨ÅI
+[2024-05-12 23:57:58.940] [info] [thread 5017] [thread_pool.h taskRead:152] 781(0x6700143B) WindowsWechat(0x63090a13) XWEB/9129 Flue
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/av¿¨ÅI
+[2024-05-12 23:57:58.940] [info] [thread 5017] [thread_pool.h taskRead:152] if,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-C¿¨ÅI
+[2024-05-12 23:57:58.940] [info] [thread 5017] [thread_pool.h taskRead:152] N,zh;q=0.9
+
+image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-C¿¨ÅI
+[2024-05-12 23:57:58.940] [info] [thread 5017] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ÅI
+[2024-05-12 23:57:58.976] [info] [thread 5012] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:57:58.976] [info] [thread 5012] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:58:10.656] [info] [thread 5012] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:58:10.656] [info] [thread 5012] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:58:10.656] [info] [thread 5013] [thread_pool.h taskRead:152] GET /favicon.ico HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x6¿ÏÉI
+[2024-05-12 23:58:10.656] [info] [thread 5013] [thread_pool.h taskRead:152] 4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.289 Safari/537.36
+Accept-Encoding: gzip, deflate
+Accept-Language: ¿ÏÉI
+[2024-05-12 23:58:10.656] [info] [thread 5013] [thread_pool.h taskRead:152] zh-CN,zh;q=0.9
+
+.36 (KHTML, like Gecko) Chrome/114.0.5735.289 Safari/537.36
+Accept-Encoding: gzip, deflate
+Accept-Language: ¿ÏÉI
+[2024-05-12 23:58:10.656] [info] [thread 5013] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ÉI
+[2024-05-12 23:58:11.246] [info] [thread 5012] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:58:11.246] [info] [thread 5012] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:58:11.246] [info] [thread 5014] [thread_pool.h taskRead:152] GET /favicon.ico HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x6¿‹ˇÇI
+[2024-05-12 23:58:11.246] [info] [thread 5014] [thread_pool.h taskRead:152] 4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.289 Safari/537.36
+Accept-Encoding: gzip, deflate
+Accept-Language: ¿‹ˇÇI
+[2024-05-12 23:58:11.246] [info] [thread 5014] [thread_pool.h taskRead:152] zh-CN,zh;q=0.9
+
+.36 (KHTML, like Gecko) Chrome/114.0.5735.289 Safari/537.36
+Accept-Encoding: gzip, deflate
+Accept-Language: ¿‹ˇÇI
+[2024-05-12 23:58:11.246] [info] [thread 5014] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ˇÇI
+[2024-05-12 23:58:11.456] [info] [thread 5012] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:58:11.456] [info] [thread 5012] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:58:11.456] [info] [thread 5012] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:58:11.456] [info] [thread 5015] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows¿ÃÇI
+[2024-05-12 23:58:11.456] [info] [thread 5015] [thread_pool.h taskRead:152]  NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.289 Safari/537.36
+Accept: text/html,application/¿ÃÇI
+[2024-05-12 23:58:11.456] [info] [thread 5015] [thread_pool.h taskRead:152] xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encodi¿ÃÇI
+[2024-05-12 23:58:11.456] [info] [thread 5015] [thread_pool.h taskRead:152] ng: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encodi¿ÃÇI
+[2024-05-12 23:58:11.457] [info] [thread 5015] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ÇI
+[2024-05-12 23:58:18.304] [info] [thread 5012] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:58:18.304] [info] [thread 5012] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:58:18.304] [info] [thread 5012] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:58:18.304] [info] [thread 5016] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows¿ºˇÅI
+[2024-05-12 23:58:18.304] [info] [thread 5016] [thread_pool.h taskRead:152]  NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml¿ºˇÅI
+[2024-05-12 23:58:18.304] [info] [thread 5016] [thread_pool.h taskRead:152] +xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: g¿ºˇÅI
+[2024-05-12 23:58:18.304] [info] [thread 5016] [thread_pool.h taskRead:152] zip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+
+g,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: g¿ºˇÅI
+[2024-05-12 23:58:18.304] [info] [thread 5016] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ˇÅI
+[2024-05-12 23:58:19.599] [info] [thread 5012] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:58:19.599] [info] [thread 5017] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-A¿¨ÅI
+[2024-05-12 23:58:19.599] [info] [thread 5017] [thread_pool.h taskRead:152] gent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept: t¿¨ÅI
+[2024-05-12 23:58:19.599] [info] [thread 5017] [thread_pool.h taskRead:152] ext/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿¨ÅI
+[2024-05-12 23:58:19.599] [info] [thread 5017] [thread_pool.h taskRead:152] ;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+
+g,*/*;q=0.8,application/signed-exchange;v=b3¿¨ÅI
+[2024-05-12 23:58:19.599] [info] [thread 5017] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ÅI
+[2024-05-12 23:58:19.602] [info] [thread 5012] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:58:20.051] [info] [thread 5012] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:58:20.051] [info] [thread 5013] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-A¿ÏÉI
+[2024-05-12 23:58:20.051] [info] [thread 5013] [thread_pool.h taskRead:152] gent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept: t¿ÏÉI
+[2024-05-12 23:58:20.051] [info] [thread 5013] [thread_pool.h taskRead:152] ext/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿ÏÉI
+[2024-05-12 23:58:20.051] [info] [thread 5013] [thread_pool.h taskRead:152] ;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+
+g,*/*;q=0.8,application/signed-exchange;v=b3¿ÏÉI
+[2024-05-12 23:58:20.051] [info] [thread 5013] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ÉI
+[2024-05-12 23:58:20.053] [info] [thread 5012] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:58:24.006] [info] [thread 5012] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:58:24.006] [info] [thread 5012] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:58:24.006] [info] [thread 5014] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox¿‹ˇÇI
+[2024-05-12 23:58:24.006] [info] [thread 5014] [thread_pool.h taskRead:152] /125.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh¿‹ˇÇI
+[2024-05-12 23:58:24.006] [info] [thread 5014] [thread_pool.h taskRead:152] ;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Re¿‹ˇÇI
+[2024-05-12 23:58:24.006] [info] [thread 5014] [thread_pool.h taskRead:152] quests: 1
+
+q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Re¿‹ˇÇI
+[2024-05-12 23:58:24.006] [info] [thread 5014] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ˇÇI
+[2024-05-12 23:58:24.014] [info] [thread 5012] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:58:24.014] [info] [thread 5012] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:58:24.014] [info] [thread 5015] [thread_pool.h taskRead:152] GET /favicon.ico HTTP/1.1
+Host: 192.168.0.17:10000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100¿ÃÇI
+[2024-05-12 23:58:24.014] [info] [thread 5015] [thread_pool.h taskRead:152] 101 Firefox/125.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0¿ÃÇI
+[2024-05-12 23:58:24.014] [info] [thread 5015] [thread_pool.h taskRead:152] .2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://192.168.0.17:10000/
+
+h-HK;q=0.5,en-US;q=0.3,en;q=0¿ÃÇI
+[2024-05-12 23:58:24.014] [info] [thread 5015] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ÇI
+[2024-05-12 23:58:24.513] [info] [thread 5012] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:58:24.513] [info] [thread 5012] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:58:24.513] [info] [thread 5016] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox¿ºˇÅI
+[2024-05-12 23:58:24.513] [info] [thread 5016] [thread_pool.h taskRead:152] /125.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh¿ºˇÅI
+[2024-05-12 23:58:24.513] [info] [thread 5016] [thread_pool.h taskRead:152] ;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Re¿ºˇÅI
+[2024-05-12 23:58:24.513] [info] [thread 5016] [thread_pool.h taskRead:152] quests: 1
+
+q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Re¿ºˇÅI
+[2024-05-12 23:58:24.513] [info] [thread 5016] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ˇÅI
+[2024-05-12 23:58:24.525] [info] [thread 5012] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:58:24.525] [info] [thread 5012] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:58:24.525] [info] [thread 5017] [thread_pool.h taskRead:152] GET /favicon.ico HTTP/1.1
+Host: 192.168.0.17:10000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100¿¨ÅI
+[2024-05-12 23:58:24.525] [info] [thread 5017] [thread_pool.h taskRead:152] 101 Firefox/125.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0¿¨ÅI
+[2024-05-12 23:58:24.526] [info] [thread 5017] [thread_pool.h taskRead:152] .2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://192.168.0.17:10000/
+
+h-HK;q=0.5,en-US;q=0.3,en;q=0¿¨ÅI
+[2024-05-12 23:58:24.526] [info] [thread 5017] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ÅI
+[2024-05-12 23:58:24.656] [info] [thread 5012] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:58:24.656] [info] [thread 5012] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:58:24.656] [info] [thread 5013] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox¿ÏÉI
+[2024-05-12 23:58:24.656] [info] [thread 5013] [thread_pool.h taskRead:152] /125.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh¿ÏÉI
+[2024-05-12 23:58:24.656] [info] [thread 5013] [thread_pool.h taskRead:152] ;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Re¿ÏÉI
+[2024-05-12 23:58:24.656] [info] [thread 5013] [thread_pool.h taskRead:152] quests: 1
+
+q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Re¿ÏÉI
+[2024-05-12 23:58:24.656] [info] [thread 5013] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ÉI
+[2024-05-12 23:58:24.666] [info] [thread 5012] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:58:24.666] [info] [thread 5012] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:58:24.666] [info] [thread 5014] [thread_pool.h taskRead:152] GET /favicon.ico HTTP/1.1
+Host: 192.168.0.17:10000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100¿‹ˇÇI
+[2024-05-12 23:58:24.666] [info] [thread 5014] [thread_pool.h taskRead:152] 101 Firefox/125.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0¿‹ˇÇI
+[2024-05-12 23:58:24.666] [info] [thread 5014] [thread_pool.h taskRead:152] .2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://192.168.0.17:10000/
+
+h-HK;q=0.5,en-US;q=0.3,en;q=0¿‹ˇÇI
+[2024-05-12 23:58:24.666] [info] [thread 5014] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ˇÇI
+[2024-05-12 23:58:24.789] [info] [thread 5012] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:58:24.789] [info] [thread 5012] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:58:24.790] [info] [thread 5015] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox¿ÃÇI
+[2024-05-12 23:58:24.790] [info] [thread 5015] [thread_pool.h taskRead:152] /125.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh¿ÃÇI
+[2024-05-12 23:58:24.790] [info] [thread 5015] [thread_pool.h taskRead:152] ;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Re¿ÃÇI
+[2024-05-12 23:58:24.790] [info] [thread 5015] [thread_pool.h taskRead:152] quests: 1
+
+q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Re¿ÃÇI
+[2024-05-12 23:58:24.790] [info] [thread 5015] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ÇI
+[2024-05-12 23:58:24.798] [info] [thread 5012] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:58:24.798] [info] [thread 5012] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:58:24.798] [info] [thread 5016] [thread_pool.h taskRead:152] GET /favicon.ico HTTP/1.1
+Host: 192.168.0.17:10000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100¿ºˇÅI
+[2024-05-12 23:58:24.798] [info] [thread 5016] [thread_pool.h taskRead:152] 101 Firefox/125.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0¿ºˇÅI
+[2024-05-12 23:58:24.798] [info] [thread 5016] [thread_pool.h taskRead:152] .2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://192.168.0.17:10000/
+
+h-HK;q=0.5,en-US;q=0.3,en;q=0¿ºˇÅI
+[2024-05-12 23:58:24.799] [info] [thread 5016] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ˇÅI
+[2024-05-12 23:58:24.903] [info] [thread 5012] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:58:24.903] [info] [thread 5012] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:58:24.903] [info] [thread 5017] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox¿¨ÅI
+[2024-05-12 23:58:24.903] [info] [thread 5017] [thread_pool.h taskRead:152] /125.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh¿¨ÅI
+[2024-05-12 23:58:24.903] [info] [thread 5017] [thread_pool.h taskRead:152] ;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Re¿¨ÅI
+[2024-05-12 23:58:24.903] [info] [thread 5017] [thread_pool.h taskRead:152] quests: 1
+
+q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Re¿¨ÅI
+[2024-05-12 23:58:24.903] [info] [thread 5017] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ÅI
+[2024-05-12 23:58:24.913] [info] [thread 5012] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:58:24.913] [info] [thread 5012] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:58:24.913] [info] [thread 5013] [thread_pool.h taskRead:152] GET /favicon.ico HTTP/1.1
+Host: 192.168.0.17:10000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100¿ÏÉI
+[2024-05-12 23:58:24.913] [info] [thread 5013] [thread_pool.h taskRead:152] 101 Firefox/125.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0¿ÏÉI
+[2024-05-12 23:58:24.913] [info] [thread 5013] [thread_pool.h taskRead:152] .2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://192.168.0.17:10000/
+
+h-HK;q=0.5,en-US;q=0.3,en;q=0¿ÏÉI
+[2024-05-12 23:58:24.913] [info] [thread 5013] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ÉI
+[2024-05-12 23:58:48.934] [info] [thread 5012] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:58:48.934] [info] [thread 5012] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:58:48.934] [info] [thread 5014] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox¿‹ˇÇI
+[2024-05-12 23:58:48.934] [info] [thread 5014] [thread_pool.h taskRead:152] /125.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh¿‹ˇÇI
+[2024-05-12 23:58:48.934] [info] [thread 5014] [thread_pool.h taskRead:152] ;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Re¿‹ˇÇI
+[2024-05-12 23:58:48.934] [info] [thread 5014] [thread_pool.h taskRead:152] quests: 1
+
+q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Re¿‹ˇÇI
+[2024-05-12 23:58:48.934] [info] [thread 5014] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ˇÇI
+[2024-05-12 23:58:48.941] [info] [thread 5012] [server.cpp mainLoop:37] new connect
+[2024-05-12 23:58:48.941] [info] [thread 5012] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-12 23:58:48.941] [info] [thread 5015] [thread_pool.h taskRead:152] GET /favicon.ico HTTP/1.1
+Host: 192.168.0.17:10000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100¿ÃÇI
+[2024-05-12 23:58:48.941] [info] [thread 5015] [thread_pool.h taskRead:152] 101 Firefox/125.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0¿ÃÇI
+[2024-05-12 23:58:48.941] [info] [thread 5015] [thread_pool.h taskRead:152] .2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://192.168.0.17:10000/
+
+h-HK;q=0.5,en-US;q=0.3,en;q=0¿ÃÇI
+[2024-05-12 23:58:48.942] [info] [thread 5015] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ÇI
+[2024-05-13 00:01:17.436] [info] [thread 5012] [server.cpp mainLoop:37] new connect
+[2024-05-13 00:01:17.782] [info] [thread 5012] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-13 00:01:17.782] [info] [thread 5016] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;¿ºˇÅI
+[2024-05-13 00:01:17.782] [info] [thread 5016] [thread_pool.h taskRead:152] q=0.9,*/*;q=0.8
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 17_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) V¿ºˇÅI
+[2024-05-13 00:01:17.782] [info] [thread 5016] [thread_pool.h taskRead:152] ersion/17.2 Mobile/15E148 Safari/604.1
+Accept-Language: zh-CN,zh-Hans;q=0.9
+Accept-Encoding: gzip, deflate
+Connection: keep-a¿ºˇÅI
+[2024-05-13 00:01:17.782] [info] [thread 5016] [thread_pool.h taskRead:152] live
+
+7.2 Mobile/15E148 Safari/604.1
+Accept-Language: zh-CN,zh-Hans;q=0.9
+Accept-Encoding: gzip, deflate
+Connection: keep-a¿ºˇÅI
+[2024-05-13 00:01:17.782] [info] [thread 5016] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ˇÅI
+[2024-05-13 00:03:10.264] [info] [thread 5012] [server.cpp mainLoop:37] new connect
+[2024-05-13 00:03:10.264] [info] [thread 5012] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-13 00:03:10.264] [info] [thread 5017] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox¿¨ÅI
+[2024-05-13 00:03:10.264] [info] [thread 5017] [thread_pool.h taskRead:152] /125.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh¿¨ÅI
+[2024-05-13 00:03:10.264] [info] [thread 5017] [thread_pool.h taskRead:152] ;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Upgrade-Ins¿¨ÅI
+[2024-05-13 00:03:10.264] [info] [thread 5017] [thread_pool.h taskRead:152] ecure-Requests: 1
+Pragma: no-cache
+Cache-Control: no-cache
+
+ding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Upgrade-Ins¿¨ÅI
+[2024-05-13 00:03:10.264] [info] [thread 5017] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ÅI
+[2024-05-13 00:06:59.110] [info] [thread 5232] [server.cpp my_server:23] server init complete!
+[2024-05-13 00:07:00.793] [info] [thread 5232] [server.cpp mainLoop:37] new connect
+[2024-05-13 00:07:00.794] [info] [thread 5232] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-13 00:07:00.795] [info] [thread 5237] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;¿¨b©x
+[2024-05-13 00:07:00.795] [info] [thread 5237] [thread_pool.h taskRead:152] q=0.9,*/*;q=0.8
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 17_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Cri¿¨b©x
+[2024-05-13 00:07:00.795] [info] [thread 5237] [thread_pool.h taskRead:152] OS/106.0.5249.92 Mobile/15E148 Safari/604.1
+Accept-Language: zh-CN,zh-Hans;q=0.9
+Accept-Encoding: gzip, deflate
+Connection: k¿¨b©x
+[2024-05-13 00:07:00.795] [info] [thread 5237] [thread_pool.h taskRead:152] eep-alive
+
+.92 Mobile/15E148 Safari/604.1
+Accept-Language: zh-CN,zh-Hans;q=0.9
+Accept-Encoding: gzip, deflate
+Connection: k¿¨b©x
+[2024-05-13 00:07:00.795] [info] [thread 5237] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492b©x
+[2024-05-13 00:07:09.109] [info] [thread 5232] [server.cpp mainLoop:37] new connect
+[2024-05-13 00:07:09.110] [info] [thread 5232] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-13 00:07:09.110] [info] [thread 5233] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;¿Ïd©x
+[2024-05-13 00:07:09.110] [info] [thread 5233] [thread_pool.h taskRead:152] q=0.9,*/*;q=0.8
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 17_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Cri¿Ïd©x
+[2024-05-13 00:07:09.110] [info] [thread 5233] [thread_pool.h taskRead:152] OS/106.0.5249.92 Mobile/15E148 Safari/604.1
+Accept-Language: zh-CN,zh-Hans;q=0.9
+Accept-Encoding: gzip, deflate
+Connection: k¿Ïd©x
+[2024-05-13 00:07:09.110] [info] [thread 5233] [thread_pool.h taskRead:152] eep-alive
+
+.92 Mobile/15E148 Safari/604.1
+Accept-Language: zh-CN,zh-Hans;q=0.9
+Accept-Encoding: gzip, deflate
+Connection: k¿Ïd©x
+[2024-05-13 00:07:09.111] [info] [thread 5233] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492d©x
+[2024-05-13 00:07:19.643] [info] [thread 5232] [server.cpp mainLoop:37] new connect
+[2024-05-13 00:07:19.643] [info] [thread 5232] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-13 00:07:19.643] [info] [thread 5234] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-A¿‹ˇc©x
+[2024-05-13 00:07:19.643] [info] [thread 5234] [thread_pool.h taskRead:152] gent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept: t¿‹ˇc©x
+[2024-05-13 00:07:19.643] [info] [thread 5234] [thread_pool.h taskRead:152] ext/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿‹ˇc©x
+[2024-05-13 00:07:19.643] [info] [thread 5234] [thread_pool.h taskRead:152] ;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿‹ˇc©x
+[2024-05-13 00:07:19.643] [info] [thread 5234] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ˇc©x
+[2024-05-13 00:07:19.644] [info] [thread 5232] [server.cpp mainLoop:37] new connect
+[2024-05-13 00:07:19.644] [info] [thread 5232] [server.cpp mainLoop:37] new connect
+[2024-05-13 00:07:20.658] [info] [thread 5232] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-13 00:07:20.659] [info] [thread 5235] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-A¿Ãc©x
+[2024-05-13 00:07:20.659] [info] [thread 5235] [thread_pool.h taskRead:152] gent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept: t¿Ãc©x
+[2024-05-13 00:07:20.659] [info] [thread 5235] [thread_pool.h taskRead:152] ext/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿Ãc©x
+[2024-05-13 00:07:20.659] [info] [thread 5235] [thread_pool.h taskRead:152] ;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿Ãc©x
+[2024-05-13 00:07:20.659] [info] [thread 5235] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492c©x
+[2024-05-13 00:07:20.659] [info] [thread 5232] [server.cpp mainLoop:37] new connect
+[2024-05-13 00:07:22.214] [info] [thread 5232] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-13 00:07:22.214] [info] [thread 5236] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-A¿ºˇb©x
+[2024-05-13 00:07:22.214] [info] [thread 5236] [thread_pool.h taskRead:152] gent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept: t¿ºˇb©x
+[2024-05-13 00:07:22.214] [info] [thread 5236] [thread_pool.h taskRead:152] ext/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿ºˇb©x
+[2024-05-13 00:07:22.214] [info] [thread 5236] [thread_pool.h taskRead:152] ;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿ºˇb©x
+[2024-05-13 00:07:22.215] [info] [thread 5236] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ˇb©x
+[2024-05-13 00:07:22.216] [info] [thread 5232] [server.cpp mainLoop:37] new connect
+[2024-05-13 00:07:22.783] [info] [thread 5232] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-13 00:07:22.783] [info] [thread 5237] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-A¿¨b©x
+[2024-05-13 00:07:22.783] [info] [thread 5237] [thread_pool.h taskRead:152] gent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept: t¿¨b©x
+[2024-05-13 00:07:22.783] [info] [thread 5237] [thread_pool.h taskRead:152] ext/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿¨b©x
+[2024-05-13 00:07:22.783] [info] [thread 5237] [thread_pool.h taskRead:152] ;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿¨b©x
+[2024-05-13 00:07:22.783] [info] [thread 5237] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492b©x
+[2024-05-13 00:07:22.784] [info] [thread 5232] [server.cpp mainLoop:37] new connect
+[2024-05-13 00:07:27.806] [info] [thread 5232] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-13 00:07:27.806] [info] [thread 5233] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-A¿Ïd©x
+[2024-05-13 00:07:27.806] [info] [thread 5233] [thread_pool.h taskRead:152] gent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept: t¿Ïd©x
+[2024-05-13 00:07:27.806] [info] [thread 5233] [thread_pool.h taskRead:152] ext/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿Ïd©x
+[2024-05-13 00:07:27.806] [info] [thread 5233] [thread_pool.h taskRead:152] ;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿Ïd©x
+[2024-05-13 00:07:27.806] [info] [thread 5233] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492d©x
+[2024-05-13 00:07:27.807] [info] [thread 5232] [server.cpp mainLoop:37] new connect
+[2024-05-13 00:07:30.302] [info] [thread 5232] [server.cpp mainLoop:37] new connect
+[2024-05-13 00:07:30.302] [info] [thread 5232] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-13 00:07:30.302] [info] [thread 5234] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox¿‹ˇc©x
+[2024-05-13 00:07:30.302] [info] [thread 5234] [thread_pool.h taskRead:152] /125.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh¿‹ˇc©x
+[2024-05-13 00:07:30.302] [info] [thread 5234] [thread_pool.h taskRead:152] ;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Re¿‹ˇc©x
+[2024-05-13 00:07:30.302] [info] [thread 5234] [thread_pool.h taskRead:152] quests: 1
+
+q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Re¿‹ˇc©x
+[2024-05-13 00:07:30.302] [info] [thread 5234] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ˇc©x
+[2024-05-13 00:07:30.313] [info] [thread 5232] [server.cpp mainLoop:37] new connect
+[2024-05-13 00:07:30.313] [info] [thread 5232] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-13 00:07:30.313] [info] [thread 5235] [thread_pool.h taskRead:152] GET /favicon.ico HTTP/1.1
+Host: 192.168.0.17:10000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100¿Ãc©x
+[2024-05-13 00:07:30.313] [info] [thread 5235] [thread_pool.h taskRead:152] 101 Firefox/125.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0¿Ãc©x
+[2024-05-13 00:07:30.313] [info] [thread 5235] [thread_pool.h taskRead:152] .2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://192.168.0.17:10000/
+
+h-HK;q=0.5,en-US;q=0.3,en;q=0¿Ãc©x
+[2024-05-13 00:07:30.313] [info] [thread 5235] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492c©x
+[2024-05-13 00:07:35.326] [info] [thread 5232] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-13 00:07:35.326] [info] [thread 5236] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-A¿ºˇb©x
+[2024-05-13 00:07:35.326] [info] [thread 5236] [thread_pool.h taskRead:152] gent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept: t¿ºˇb©x
+[2024-05-13 00:07:35.326] [info] [thread 5236] [thread_pool.h taskRead:152] ext/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿ºˇb©x
+[2024-05-13 00:07:35.326] [info] [thread 5236] [thread_pool.h taskRead:152] ;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿ºˇb©x
+[2024-05-13 00:07:35.326] [info] [thread 5236] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ˇb©x
+[2024-05-13 00:07:35.327] [info] [thread 5232] [server.cpp mainLoop:37] new connect
+[2024-05-13 00:07:36.783] [info] [thread 5232] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-13 00:07:36.783] [info] [thread 5232] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-13 00:07:36.783] [info] [thread 5233] [thread_pool.h taskRead:146] client close
+[2024-05-13 00:07:36.783] [info] [thread 5237] [thread_pool.h taskRead:146] client close
+[2024-05-13 00:08:20.426] [info] [thread 5232] [server.cpp mainLoop:37] new connect
+[2024-05-13 00:08:20.466] [info] [thread 5232] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-13 00:08:20.466] [info] [thread 5234] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;¿‹ˇc©x
+[2024-05-13 00:08:20.466] [info] [thread 5234] [thread_pool.h taskRead:152] q=0.9,*/*;q=0.8
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 17_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) F¿‹ˇc©x
+[2024-05-13 00:08:20.466] [info] [thread 5234] [thread_pool.h taskRead:152] xiOS/125.3  Mobile/15E148 Safari/605.1.15
+Accept-Language: zh-CN,zh-Hans;q=0.9
+Accept-Encoding: gzip, deflate
+Connection: kee¿‹ˇc©x
+[2024-05-13 00:08:20.466] [info] [thread 5234] [thread_pool.h taskRead:152] p-alive
+
+ Mobile/15E148 Safari/605.1.15
+Accept-Language: zh-CN,zh-Hans;q=0.9
+Accept-Encoding: gzip, deflate
+Connection: kee¿‹ˇc©x
+[2024-05-13 00:08:20.466] [info] [thread 5234] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ˇc©x
+[2024-05-13 00:08:24.200] [info] [thread 5232] [server.cpp mainLoop:37] new connect
+[2024-05-13 00:08:24.201] [info] [thread 5232] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-13 00:08:24.201] [info] [thread 5235] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;¿Ãc©x
+[2024-05-13 00:08:24.201] [info] [thread 5235] [thread_pool.h taskRead:152] q=0.9,*/*;q=0.8
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 17_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) F¿Ãc©x
+[2024-05-13 00:08:24.201] [info] [thread 5235] [thread_pool.h taskRead:152] xiOS/125.3  Mobile/15E148 Safari/605.1.15
+Accept-Language: zh-CN,zh-Hans;q=0.9
+Accept-Encoding: gzip, deflate
+Connection: kee¿Ãc©x
+[2024-05-13 00:08:24.201] [info] [thread 5235] [thread_pool.h taskRead:152] p-alive
+
+ Mobile/15E148 Safari/605.1.15
+Accept-Language: zh-CN,zh-Hans;q=0.9
+Accept-Encoding: gzip, deflate
+Connection: kee¿Ãc©x
+[2024-05-13 00:08:24.201] [info] [thread 5235] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492c©x
+[2024-05-13 00:10:20.384] [info] [thread 5232] [server.cpp mainLoop:37] new connect
+[2024-05-13 00:10:21.349] [info] [thread 5232] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-13 00:10:21.349] [info] [thread 5236] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows¿ºˇb©x
+[2024-05-13 00:10:21.349] [info] [thread 5236] [thread_pool.h taskRead:152]  NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 NetType/WIFI MicroMessenger/7.0.20.1¿ºˇb©x
+[2024-05-13 00:10:21.349] [info] [thread 5236] [thread_pool.h taskRead:152] 781(0x6700143B) WindowsWechat(0x63090a13) XWEB/9129 Flue
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/av¿ºˇb©x
+[2024-05-13 00:10:21.349] [info] [thread 5236] [thread_pool.h taskRead:152] if,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-C¿ºˇb©x
+[2024-05-13 00:10:21.349] [info] [thread 5236] [thread_pool.h taskRead:152] N,zh;q=0.9
+
+image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-C¿ºˇb©x
+[2024-05-13 00:10:21.349] [info] [thread 5236] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ˇb©x
+[2024-05-13 00:10:21.400] [info] [thread 5232] [server.cpp mainLoop:37] new connect
+[2024-05-13 00:10:21.401] [info] [thread 5232] [server.cpp mainLoop:37] new connect
+[2024-05-13 00:10:22.870] [info] [thread 5232] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-13 00:10:22.870] [info] [thread 5233] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-A¿Ïd©x
+[2024-05-13 00:10:22.870] [info] [thread 5233] [thread_pool.h taskRead:152] gent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 NetType/WI¿Ïd©x
+[2024-05-13 00:10:22.870] [info] [thread 5233] [thread_pool.h taskRead:152] FI MicroMessenger/7.0.20.1781(0x6700143B) WindowsWechat(0x63090a13) XWEB/9129 Flue
+Accept: text/html,application/xhtml+xml,appl¿Ïd©x
+[2024-05-13 00:10:22.870] [info] [thread 5233] [thread_pool.h taskRead:152] ication/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, defl¿Ïd©x
+[2024-05-13 00:10:22.870] [info] [thread 5233] [thread_pool.h taskRead:152] ate
+Accept-Language: zh-CN,zh;q=0.9
+
+image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, defl¿Ïd©x
+[2024-05-13 00:10:22.870] [info] [thread 5233] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492d©x
+[2024-05-13 00:10:38.746] [info] [thread 5232] [server.cpp mainLoop:37] new connect
+[2024-05-13 00:10:38.746] [info] [thread 5232] [server.cpp mainLoop:37] new connect
+[2024-05-13 00:10:38.746] [info] [thread 5232] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-13 00:10:38.746] [info] [thread 5237] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows¿¨b©x
+[2024-05-13 00:10:38.746] [info] [thread 5237] [thread_pool.h taskRead:152]  NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml¿¨b©x
+[2024-05-13 00:10:38.746] [info] [thread 5237] [thread_pool.h taskRead:152] +xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: g¿¨b©x
+[2024-05-13 00:10:38.746] [info] [thread 5237] [thread_pool.h taskRead:152] zip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+
+g,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: g¿¨b©x
+[2024-05-13 00:10:38.746] [info] [thread 5237] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492b©x
+[2024-05-13 00:10:39.978] [info] [thread 5232] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-13 00:10:39.978] [info] [thread 5234] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-A¿‹ˇc©x
+[2024-05-13 00:10:39.979] [info] [thread 5234] [thread_pool.h taskRead:152] gent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept: t¿‹ˇc©x
+[2024-05-13 00:10:39.979] [info] [thread 5234] [thread_pool.h taskRead:152] ext/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3¿‹ˇc©x
+[2024-05-13 00:10:39.979] [info] [thread 5234] [thread_pool.h taskRead:152] ;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+
+g,*/*;q=0.8,application/signed-exchange;v=b3¿‹ˇc©x
+[2024-05-13 00:10:39.979] [info] [thread 5234] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ˇc©x
+[2024-05-13 00:10:39.981] [info] [thread 5232] [server.cpp mainLoop:37] new connect
+[2024-05-13 00:11:13.890] [info] [thread 5232] [server.cpp mainLoop:37] new connect
+[2024-05-13 00:11:13.891] [info] [thread 5232] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-13 00:11:13.891] [info] [thread 5235] [thread_pool.h taskRead:152] GET / HTTP/1.1
+Host: 192.168.0.17:10000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox¿Ãc©x
+[2024-05-13 00:11:13.891] [info] [thread 5235] [thread_pool.h taskRead:152] /125.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh¿Ãc©x
+[2024-05-13 00:11:13.891] [info] [thread 5235] [thread_pool.h taskRead:152] ;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Re¿Ãc©x
+[2024-05-13 00:11:13.891] [info] [thread 5235] [thread_pool.h taskRead:152] quests: 1
+
+q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Re¿Ãc©x
+[2024-05-13 00:11:13.891] [info] [thread 5235] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492c©x
+[2024-05-13 00:11:13.909] [info] [thread 5232] [server.cpp mainLoop:37] new connect
+[2024-05-13 00:11:13.910] [info] [thread 5232] [server.cpp mainLoop:60] EPOLLIN
+[2024-05-13 00:11:13.910] [info] [thread 5236] [thread_pool.h taskRead:152] GET /favicon.ico HTTP/1.1
+Host: 192.168.0.17:10000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100¿ºˇb©x
+[2024-05-13 00:11:13.910] [info] [thread 5236] [thread_pool.h taskRead:152] 101 Firefox/125.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0¿ºˇb©x
+[2024-05-13 00:11:13.910] [info] [thread 5236] [thread_pool.h taskRead:152] .2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://192.168.0.17:10000/
+
+h-HK;q=0.5,en-US;q=0.3,en;q=0¿ºˇb©x
+[2024-05-13 00:11:13.910] [info] [thread 5236] [thread_pool.h taskRead:185] designer:lhz
+QQ:1131123492ˇb©x

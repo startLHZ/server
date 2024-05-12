@@ -20,7 +20,7 @@
 #include <errno.h>
 #include "logger.h"
 
-#define BUFFER_SIZE 1024
+#define BUFFER_SIZE 64
 
 template<typename task_type>
 class m_thread_pool 
@@ -130,7 +130,7 @@ void* m_thread_pool<task_type>::worker(void* arg) {
 template<typename task_type>
 void m_thread_pool<task_type>::taskRead(int arg, int epfd) {
     int sockfd = arg;
-    char buf[256];
+    char buf[128];
     memset(buf, 0, sizeof(buf));
     // 循环读数据
     while(1)
@@ -144,46 +144,12 @@ void m_thread_pool<task_type>::taskRead(int arg, int epfd) {
             epoll_ctl(epfd, EPOLL_CTL_DEL, sockfd, NULL);
             close(sockfd);
             INFOLOG("client close");
-            break;
+            return;
         } else if (len > 0) {
             // 通信
             // 接收的数据打印到终端
             // write(STDOUT_FILENO, buf, len);
             INFOLOG(buf);
-
-
-            // int n;
-            // FILE *file;
-            // char buffer[BUFFER_SIZE];
-
-            // // 打开文件
-            // file = fopen("../root/index.html", "r");
-            // if (file == NULL) {
-            //     perror("Error opening file");
-            //     exit(1);
-            // }
-
-            // // 假设 sockfd 已经有了有效的值
-
-            // // 读取文件内容并发送
-            // while ((n = fread(buffer, 1, BUFFER_SIZE, file)) > 0) {
-            //     if (send(sockfd, buffer, n, 0) < 0) {
-            //         perror("ERROR writing to socket");
-            //         exit(1);
-            //     }
-            //     INFOLOG(buffer);
-            // }
-
-            // // 关闭文件
-            // fclose(file);
-
-            // INFOLOG();
-            send(sockfd, buf, len, 0);
-
-            epoll_ctl(epfd, EPOLL_CTL_DEL, sockfd, NULL);
-            close(sockfd);
-            INFOLOG("client close");
-            break;
         } else {
             // len == -1
             if(errno == EAGAIN)
@@ -199,6 +165,30 @@ void m_thread_pool<task_type>::taskRead(int arg, int epfd) {
             }
         }
     }
+    int n;
+    FILE *file;
+    char buffer[BUFFER_SIZE];
+
+    // 打开文件
+    file = fopen("../root/test.html", "r");
+    if (file == NULL) {
+        perror("Error opening file");
+        exit(1);
+    }
+
+    // 读取文件内容并发送
+    while ((n = fread(buffer, 1, BUFFER_SIZE, file)) > 0) {
+        if (send(sockfd, buffer, n, 0) < 0) {
+            perror("ERROR writing to socket");
+            exit(1);
+        }
+        INFOLOG(buffer);
+    }
+    // 关闭文件
+    fclose(file);
+
+    epoll_ctl(epfd, EPOLL_CTL_DEL, sockfd, NULL);
+    close(sockfd);
 }
 
 template<typename task_type>
