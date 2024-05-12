@@ -12,7 +12,7 @@
 #include <sys/stat.h>
 #include <string.h>
 #include <arpa/inet.h>
-
+#include "logger.h"
 
 
 my_server::my_server() {
@@ -57,9 +57,11 @@ void my_server::mainLoop() {
                 close(sockfd);
             } else if (events[i].events & EPOLLIN) {
                 dealwithread(sockfd);
+                INFOLOG("EPOLLIN");
             }
             else if (events[i].events & EPOLLOUT) {
                 dealwithwrite(sockfd);
+                INFOLOG("EPOLLOUT");
             }
         }
     }
@@ -120,8 +122,7 @@ void my_server::epoll_init() {
         ERRORLOG("epoll create error");
         exit(0);
     }
-    this->server_thread_pool->init_epfd(epfd);
-    // this->server_thread_pool->init_lfd(lfd);
+    this->server_thread_pool->epfd = this->epfd;
 
     // 往epoll实例中添加需要检测的节点, 现在只有监听的文件描述符
     ev.events = EPOLLIN;    // 检测lfd读读缓冲区是否有数据

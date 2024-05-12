@@ -20,6 +20,8 @@
 #include <errno.h>
 #include "logger.h"
 
+#define BUFFER_SIZE 1024
+
 template<typename task_type>
 class m_thread_pool 
 {
@@ -48,9 +50,9 @@ public:
         return taskQ->get_task_number();
     }
 
-    inline void init_epfe(int fd) {
-        this->
-    }
+    // inline void init_epfe(int fd) {
+    //     this->
+    // }
 
     // 工作的线程任务函数
     static void* worker(void* arg);
@@ -69,11 +71,11 @@ private:
     int aliveNum;             //存活线程数
     bool shutdown;    //是不是要销毁线程池，销毁为1，不销毁为0
     int thread_nums;
-    int epfd;//关闭单个用户连接时使用
+    
 public:
     std::mutex pool_mtx;                 //线程池的锁
     std::condition_variable main_condition;
-    
+    int epfd;//关闭单个用户连接时使用
 };
 
 template<typename task_type>
@@ -118,7 +120,7 @@ void* m_thread_pool<task_type>::worker(void* arg) {
 
         if (task->state == 0) {
             pool->taskRead(task->sockfd, -1);
-            pool->taskWrite(task->sockfd, -1);
+            // pool->taskWrite(task->sockfd, -1);
         } else {
             pool->taskWrite(task->sockfd, -1);
         }
@@ -128,24 +130,60 @@ void* m_thread_pool<task_type>::worker(void* arg) {
 template<typename task_type>
 void m_thread_pool<task_type>::taskRead(int arg, int epfd) {
     int sockfd = arg;
-    char buf[64];
+    char buf[256];
     memset(buf, 0, sizeof(buf));
     // 循环读数据
     while(1)
     {
         int len = recv(sockfd, buf, sizeof(buf), 0);
         if(len == 0) {
-            // // 非阻塞模式下和阻塞模式是一样的 => 判断对方是否断开连接
-            // // 将这个文件描述符从epoll模型中删除
-            // epoll_ctl(epfd, EPOLL_CTL_DEL, sockfd, NULL);
-            // close(sockfd);
-            // // INFOLOG("client close");
+            
+
+            // 非阻塞模式下和阻塞模式是一样的 => 判断对方是否断开连接
+            // 将这个文件描述符从epoll模型中删除
+            epoll_ctl(epfd, EPOLL_CTL_DEL, sockfd, NULL);
+            close(sockfd);
+            INFOLOG("client close");
             break;
         } else if (len > 0) {
             // 通信
             // 接收的数据打印到终端
             // write(STDOUT_FILENO, buf, len);
-            // INFOLOG("client write");
+            INFOLOG(buf);
+
+
+            // int n;
+            // FILE *file;
+            // char buffer[BUFFER_SIZE];
+
+            // // 打开文件
+            // file = fopen("../root/index.html", "r");
+            // if (file == NULL) {
+            //     perror("Error opening file");
+            //     exit(1);
+            // }
+
+            // // 假设 sockfd 已经有了有效的值
+
+            // // 读取文件内容并发送
+            // while ((n = fread(buffer, 1, BUFFER_SIZE, file)) > 0) {
+            //     if (send(sockfd, buffer, n, 0) < 0) {
+            //         perror("ERROR writing to socket");
+            //         exit(1);
+            //     }
+            //     INFOLOG(buffer);
+            // }
+
+            // // 关闭文件
+            // fclose(file);
+
+            // INFOLOG();
+            send(sockfd, buf, len, 0);
+
+            epoll_ctl(epfd, EPOLL_CTL_DEL, sockfd, NULL);
+            close(sockfd);
+            INFOLOG("client close");
+            break;
         } else {
             // len == -1
             if(errno == EAGAIN)
@@ -153,7 +191,11 @@ void m_thread_pool<task_type>::taskRead(int arg, int epfd) {
             else {
                 perror("recv");
                 ERRORLOG("recv error!");
-                exit(0);
+                epoll_ctl(epfd, EPOLL_CTL_DEL, sockfd, NULL);
+                close(sockfd);
+                INFOLOG("client close");
+                // exit(0);
+                break;
             }
         }
     }
