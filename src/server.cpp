@@ -12,11 +12,14 @@
 #include <sys/stat.h>
 #include <string.h>
 #include <arpa/inet.h>
+#include <signal.h>
 #include "logger.h"
+#include "lst_timer.h"
 
 
 my_server::my_server() {
     this->stop_server = false;
+    timer_init();
     log_init();
     this->server_thread_pool = new m_thread_pool<m_user*>();
     this->epoll_init();
@@ -31,38 +34,58 @@ my_server::~my_server() {
 void my_server::mainLoop() {
     while (!stop_server) {
         int number = epoll_wait(epfd, events, size, -1);
+        if (number < 0 && errno != EINTR) {
+            ERRORLOG("epoll failure");
+            break;
+        }
+
         for (int i = 0; i < number; i ++) {
             int sockfd = events[i].data.fd;
             if(sockfd == lfd) {
                 INFOLOG("new connect");
                 // 建立新连接
                 int cfd = accept(sockfd, NULL, NULL);
-                // 将文件描述符设置为非阻塞
-                // 得到文件描述符的属性
-                int flag = fcntl(cfd, F_GETFL);
-                flag |= O_NONBLOCK;
-                fcntl(cfd, F_SETFL, flag);
-                // 新得到的文件描述符添加到epoll模型中, 下一轮循环的时候就可以被检测了
-                // 通信的文件描述符检测读缓冲区数据的时候设置为边沿模式
-                ev.events = EPOLLIN | EPOLLET;    // 读缓冲区是否有数据
-                ev.data.fd = cfd;
-                ret = epoll_ctl(epfd, EPOLL_CTL_ADD, cfd, &ev);
-                if(ret == -1)
-                {
-                    perror("epoll_ctl-accept");
-                    exit(0);
-                }
+                addfd(epfd, cfd, true);
             } else if (events[i].events & (EPOLLRDHUP | EPOLLHUP | EPOLLERR)) {
-                epoll_ctl(epfd, EPOLL_CTL_DEL, sockfd, NULL);
-                close(sockfd);
+                //服务器端关闭连接，移除对应的定时器
+                util_timer *timer = users_timer[sockfd].timer;
+                timer->cb_func(&users_timer[sockfd], this->epfd);
+
+                if (timer)
+                {
+                    timer_lst.del_timer(timer);
+                }
             } else if (events[i].events & EPOLLIN) {
+                util_timer *timer = users_timer[sockfd].timer;
                 dealwithread(sockfd);
+                if (timer)
+                {
+                    time_t cur = time(NULL);
+                    timer->expire = cur + 3 * 5;
+                    INFOLOG("%s", "adjust timer once");
+                    timer_lst.adjust_timer(timer);
+                }
                 INFOLOG("EPOLLIN");
             }
             else if (events[i].events & EPOLLOUT) {
+                util_timer *timer = users_timer[sockfd].timer;
                 dealwithwrite(sockfd);
+                //若有数据传输，则将定时器往后延迟3个单位
+                //并对新的定时器在链表上的位置进行调整
+                if (timer)
+                {
+                    time_t cur = time(NULL);
+                    timer->expire = cur + 3 * 5;
+                    INFOLOG("%s", "adjust timer once");
+                    timer_lst.adjust_timer(timer);
+                }
                 INFOLOG("EPOLLOUT");
             }
+        }
+        if (timeout)
+        {
+            timer_handler();
+            timeout = false;
         }
     }
 }
@@ -88,7 +111,7 @@ void my_server::epoll_init() {
     serv_addr.sin_port = htons(10000);
     serv_addr.sin_addr.s_addr = htonl(INADDR_ANY);  // 本地多有的ＩＰ
     // 127.0.0.1
-    //inet_pton(AF_INET, "127.0.0.1", &serv_addr.sin_addr.s_addr);
+    inet_pton(AF_INET, "127.0.0.1", &serv_addr.sin_addr.s_addr);
     
     // 设置端口复用
     int opt = 1;
@@ -133,7 +156,7 @@ void my_server::epoll_init() {
         perror("epoll_ctl");
         exit(0);
     }
-
+    
     struct epoll_event evs[10000];
     size = sizeof(evs) / sizeof(struct epoll_event);
 }
@@ -157,4 +180,102 @@ void my_server::dealwithread(int sockfd) {
 void my_server::dealwithwrite(int sockfd) {
     m_user *request = new m_user(sockfd, 1);
     server_thread_pool->manager(request);
+}
+
+//定时器回调函数，删除非活动连接在socket上的注册事件，并关闭
+void cb_func(client_data *user_data, int epfd)
+{
+    epoll_ctl(epfd, EPOLL_CTL_DEL, user_data->sockfd, 0);
+    assert(user_data);
+    close(user_data->sockfd);
+    INFOLOG("close fd %d", user_data->sockfd);
+}
+
+//将内核事件表注册读事件，ET模式，选择开启EPOLLONESHOT
+void my_server::addfd(int epollfd, int cfd, bool one_shot) {
+    // 将文件描述符设置为非阻塞
+    // 得到文件描述符的属性
+    int flag = fcntl(cfd, F_GETFL);
+    flag |= O_NONBLOCK;
+    fcntl(cfd, F_SETFL, flag);
+    epoll_event event;
+    event.data.fd = cfd;
+    event.events = EPOLLIN | EPOLLET | EPOLLRDHUP;
+
+    if (one_shot)
+        event.events |= EPOLLONESHOT;
+    epoll_ctl(epollfd, EPOLL_CTL_ADD, cfd, &event);
+    if(ret == -1) {
+        perror("epoll_ctl-accept");
+        exit(0);
+    }
+    //初始化client_data数据
+    //创建定时器，设置回调函数和超时时间，绑定用户数据，将定时器添加到链表中
+    users_timer[cfd].sockfd = cfd;
+    util_timer *timer = new util_timer;
+    timer->user_data = &users_timer[cfd];
+    timer->cb_func = cb_func;
+    time_t cur = time(NULL);
+    timer->expire = cur + 3 * 5;
+    users_timer[cfd].timer = timer;
+    timer_lst.add_timer(timer);
+    // setnonblocking(fd);
+}
+
+//从内核时间表删除描述符
+void my_server::removefd(int epollfd, int fd)
+{
+    epoll_ctl(epollfd, EPOLL_CTL_DEL, fd, 0);
+    close(fd);
+}
+
+//将事件重置为EPOLLONESHOT
+void my_server::modfd(int epollfd, int fd, int ev)
+{
+    epoll_event event;
+    event.data.fd = fd;
+    event.events = ev | EPOLLET | EPOLLONESHOT | EPOLLRDHUP;
+    epoll_ctl(epollfd, EPOLL_CTL_MOD, fd, &event);
+}
+
+//设置信号函数
+void my_server::addsig(int sig, bool restart)
+{
+    struct sigaction sa;
+    memset(&sa, '\0', sizeof(sa));
+    //为保证函数的可重入性，保留原来的errno
+    int save_errno = errno;
+    int msg = sig;
+    send(pipefd[1], (char *)&msg, 1, 0);
+    errno = save_errno;
+    if (restart)
+        sa.sa_flags |= SA_RESTART;
+    sigfillset(&sa.sa_mask);
+    assert(sigaction(sig, &sa, NULL) != -1);
+}
+
+//定时处理任务，重新定时以不断触发SIGALRM信号
+void my_server::timer_handler()
+{
+    timer_lst.tick();
+}
+
+void my_server::timer_init()
+{
+    users_timer = new client_data[65535];
+    this->timer_lst.init_timer_epfd(this->epfd);
+    //创建管道
+    ret = socketpair(PF_UNIX, SOCK_STREAM, 0, pipefd);
+    assert(ret != -1);
+    // setnonblocking(pipefd[1]);
+    addfd(epfd, pipefd[0], false);
+
+    addsig(SIGALRM, false);
+    addsig(SIGTERM, false);
+    bool stop_server = false;
+
+    
+
+    bool timeout = false;
+    // alarm(TIMESLOT);
 }
