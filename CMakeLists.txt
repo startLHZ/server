@@ -16,6 +16,7 @@ add_executable(myserver
     src/main.cpp 
     src/server.cpp
     src/logger.cpp
+    src/lst_timer.cpp
 )
 
 # 为目标添加包含路径

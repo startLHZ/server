@@ -20,14 +20,19 @@
 #include <errno.h>
 #include "logger.h"
 
+// 读buf的大小
+#define BUF_SIZE 128
+// 写buffer的大小
 #define BUFFER_SIZE 64
+#define FILENAME "../root/test.html"
 
 template<typename task_type>
 class m_thread_pool 
 {
 public:
-    // 创建线程池，构造函数
-    m_thread_pool(int n = 5);
+    static m_thread_pool<task_type>* getinstance_thradPool() {
+        return instance;
+    }
 
     // 销毁线程池，析构函数
     ~m_thread_pool();
@@ -50,10 +55,6 @@ public:
         return taskQ->get_task_number();
     }
 
-    // inline void init_epfe(int fd) {
-    //     this->
-    // }
-
     // 工作的线程任务函数
     static void* worker(void* arg);
 
@@ -63,20 +64,27 @@ private:
     void taskRead(int arg, int epfd);
     void taskWrite(int arg, int epfd);
 
+    // 创建线程池，构造函数
+    m_thread_pool(int n = 5);
+
 private:
     std::condition_variable notEmpty;    //条件变量，队列不为空
     std::vector<std::thread> threadIDs;  //工作的线程ID
-    task_queue<task_type>* taskQ;                   //任务队列
-    int minNum;               //最小线程数量
-    int aliveNum;             //存活线程数
-    bool shutdown;    //是不是要销毁线程池，销毁为1，不销毁为0
+    task_queue<task_type>* taskQ;        //任务队列
+    int minNum;                          //最小线程数量
+    int aliveNum;                        //存活线程数
+    bool shutdown;                       //是不是要销毁线程池，销毁为1，不销毁为0
     int thread_nums;
+    static m_thread_pool<task_type>* instance;
     
 public:
     std::mutex pool_mtx;                 //线程池的锁
-    std::condition_variable main_condition;
-    int epfd;//关闭单个用户连接时使用
+    int epfd;                            //关闭单个用户连接时使用
 };
+
+// 饿汉式初始化静态成员变量instance
+template<typename task_type>
+m_thread_pool<task_type>* m_thread_pool<task_type>::instance = new m_thread_pool<task_type>;
 
 template<typename task_type>
 m_thread_pool<task_type>::m_thread_pool(int n) : shutdown(false), aliveNum(n), thread_nums(n)
@@ -100,16 +108,12 @@ m_thread_pool<task_type>::~m_thread_pool() {
             threadIDs[i].join(); // 等待任务结束， 前提：线程一定会执行完
         } 
     }
-
-    main_condition.notify_one();
-    return;
 }
 
 template<typename task_type>
 void* m_thread_pool<task_type>::worker(void* arg) {
     m_thread_pool<task_type>* pool = static_cast<m_thread_pool<task_type>*>(arg);
-    while (1)
-    {
+    while (1) {
         std::unique_lock<std::mutex> locker(pool->pool_mtx);
         while (pool->get_taskQ_size() == 0) {
             pool->notEmpty.wait(locker);
@@ -120,7 +124,6 @@ void* m_thread_pool<task_type>::worker(void* arg) {
 
         if (task->state == 0) {
             pool->taskRead(task->sockfd, -1);
-            // pool->taskWrite(task->sockfd, -1);
         } else {
             pool->taskWrite(task->sockfd, -1);
         }
@@ -130,15 +133,12 @@ void* m_thread_pool<task_type>::worker(void* arg) {
 template<typename task_type>
 void m_thread_pool<task_type>::taskRead(int arg, int epfd) {
     int sockfd = arg;
-    char buf[128];
+    char buf[BUF_SIZE];
     memset(buf, 0, sizeof(buf));
     // 循环读数据
-    while(1)
-    { 
+    while(1) { 
         int len = recv(sockfd, buf, sizeof(buf), 0);
         if(len == 0) {
-            
-
             // 非阻塞模式下和阻塞模式是一样的 => 判断对方是否断开连接
             // 将这个文件描述符从epoll模型中删除
             epoll_ctl(epfd, EPOLL_CTL_DEL, sockfd, NULL);
@@ -170,7 +170,7 @@ void m_thread_pool<task_type>::taskRead(int arg, int epfd) {
     char buffer[BUFFER_SIZE];
 
     // 打开文件
-    file = fopen("../root/test.html", "r");
+    file = fopen(FILENAME, "r");
     if (file == NULL) {
         perror("Error opening file");
         exit(1);
@@ -187,6 +187,7 @@ void m_thread_pool<task_type>::taskRead(int arg, int epfd) {
     // 关闭文件
     fclose(file);
 
+    // 关闭连接，不然webbench会fail
     epoll_ctl(epfd, EPOLL_CTL_DEL, sockfd, NULL);
     close(sockfd);
 }

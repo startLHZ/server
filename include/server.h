@@ -6,7 +6,7 @@
 
 class my_server {
 public:
-    my_server();
+    my_server(int argc, char*argv[]);
     ~my_server();
     void epoll_init();
     void mainLoop();
@@ -38,8 +38,12 @@ private:
 
     // timer
     int pipefd[2];
-    
     client_data *users_timer;
     bool timeout = false;
     sort_timer_lst timer_lst;
+
+    // config
+    void init_config(int argc, char*argv[]);
+    int m_port;         // 端口
+    int m_thread_num;   // worker线程数量
 };

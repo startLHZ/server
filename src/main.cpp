@@ -5,11 +5,8 @@
 #include <string>
 #include "server.h"
 
-
-int main()
-{
-    
-    my_server m_server;
+int main(int argc, char*argv[]) {
+    my_server m_server(argc, argv);
     m_server.mainLoop();
     return 0;
 }

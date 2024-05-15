@@ -343,5 +343,4 @@ CMakeFiles/myserver.dir/src/server.cpp.o: /home/lhz/server/src/server.cpp \
  /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
- /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
- /home/lhz/server/include/lst_timer.h
+ /usr/include/x86_64-linux-gnu/bits/signal_ext.h

@@ -153,6 +153,30 @@ src/logger.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myserver.dir/build.make CMakeFiles/myserver.dir/src/logger.cpp.s
 .PHONY : src/logger.cpp.s
 
+src/lst_timer.o: src/lst_timer.cpp.o
+.PHONY : src/lst_timer.o
+
+# target to build an object file
+src/lst_timer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myserver.dir/build.make CMakeFiles/myserver.dir/src/lst_timer.cpp.o
+.PHONY : src/lst_timer.cpp.o
+
+src/lst_timer.i: src/lst_timer.cpp.i
+.PHONY : src/lst_timer.i
+
+# target to preprocess a source file
+src/lst_timer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myserver.dir/build.make CMakeFiles/myserver.dir/src/lst_timer.cpp.i
+.PHONY : src/lst_timer.cpp.i
+
+src/lst_timer.s: src/lst_timer.cpp.s
+.PHONY : src/lst_timer.s
+
+# target to generate assembly for a file
+src/lst_timer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myserver.dir/build.make CMakeFiles/myserver.dir/src/lst_timer.cpp.s
+.PHONY : src/lst_timer.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -213,6 +237,9 @@ help:
 	@echo "... src/logger.o"
 	@echo "... src/logger.i"
 	@echo "... src/logger.s"
+	@echo "... src/lst_timer.o"
+	@echo "... src/lst_timer.i"
+	@echo "... src/lst_timer.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

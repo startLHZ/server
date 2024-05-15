@@ -13,5 +13,10 @@
   "directory": "/home/lhz/server/build",
   "command": "/usr/bin/g++  -I/home/lhz/server/include -I/home/lhz/server/lib/spdlog -I/home/lhz/server/lib -g -std=c++17 -pthread -o CMakeFiles/myserver.dir/src/logger.cpp.o -c /home/lhz/server/src/logger.cpp",
   "file": "/home/lhz/server/src/logger.cpp"
+},
+{
+  "directory": "/home/lhz/server/build",
+  "command": "/usr/bin/g++  -I/home/lhz/server/include -I/home/lhz/server/lib/spdlog -I/home/lhz/server/lib -g -std=c++17 -pthread -o CMakeFiles/myserver.dir/src/lst_timer.cpp.o -c /home/lhz/server/src/lst_timer.cpp",
+  "file": "/home/lhz/server/src/lst_timer.cpp"
 }
 ]

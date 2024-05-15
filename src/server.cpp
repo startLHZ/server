@@ -17,11 +17,14 @@
 #include "lst_timer.h"
 
 
-my_server::my_server() {
+my_server::my_server(int argc, char*argv[]) {
+    init_config(argc, argv);
     this->stop_server = false;
     timer_init();
     log_init();
-    this->server_thread_pool = new m_thread_pool<m_user*>();
+
+    this->server_thread_pool = m_thread_pool<m_user*>::getinstance_thradPool();
+
     this->epoll_init();
     INFOLOG("server init complete!");
 }
@@ -29,6 +32,25 @@ my_server::my_server() {
 my_server::~my_server() {
     INFOLOG("server close");
     delete server_thread_pool;
+}
+
+void my_server::init_config(int argc, char*argv[]){
+    int opt;
+    const char *str = "p:t:";
+    while ((opt = getopt(argc, argv, str)) != -1) {
+        switch (opt) {
+        case 'p': {
+            this->m_port = atoi(optarg);
+            break;
+        }
+        case 't': {
+            this->m_thread_num = atoi(optarg);
+            break;
+        }
+        default:
+            break;
+        }
+    }
 }
 
 void my_server::mainLoop() {
@@ -42,24 +64,23 @@ void my_server::mainLoop() {
         for (int i = 0; i < number; i ++) {
             int sockfd = events[i].data.fd;
             if(sockfd == lfd) {
-                INFOLOG("new connect");
                 // 建立新连接
                 int cfd = accept(sockfd, NULL, NULL);
                 addfd(epfd, cfd, true);
+                INFOLOG("new connect success");
             } else if (events[i].events & (EPOLLRDHUP | EPOLLHUP | EPOLLERR)) {
                 //服务器端关闭连接，移除对应的定时器
                 util_timer *timer = users_timer[sockfd].timer;
                 timer->cb_func(&users_timer[sockfd], this->epfd);
 
-                if (timer)
-                {
+                if (timer) {
                     timer_lst.del_timer(timer);
                 }
+                INFOLOG("client close and timer delete");
             } else if (events[i].events & EPOLLIN) {
                 util_timer *timer = users_timer[sockfd].timer;
                 dealwithread(sockfd);
-                if (timer)
-                {
+                if (timer) {
                     time_t cur = time(NULL);
                     timer->expire = cur + 3 * 5;
                     INFOLOG("%s", "adjust timer once");
@@ -72,8 +93,7 @@ void my_server::mainLoop() {
                 dealwithwrite(sockfd);
                 //若有数据传输，则将定时器往后延迟3个单位
                 //并对新的定时器在链表上的位置进行调整
-                if (timer)
-                {
+                if (timer) {
                     time_t cur = time(NULL);
                     timer->expire = cur + 3 * 5;
                     INFOLOG("%s", "adjust timer once");
@@ -81,9 +101,7 @@ void my_server::mainLoop() {
                 }
                 INFOLOG("EPOLLOUT");
             }
-        }
-        if (timeout)
-        {
+        } if (timeout) {
             timer_handler();
             timeout = false;
         }
@@ -93,8 +111,7 @@ void my_server::mainLoop() {
 void my_server::epoll_init() {
     // 创建监听的套接字
     lfd = socket(AF_INET, SOCK_STREAM, 0);
-    if(lfd == -1)
-    {
+    if(lfd == -1) {
         perror("socket error");
         ERRORLOG("socket error");
         exit(1);
@@ -108,7 +125,7 @@ void my_server::epoll_init() {
     struct sockaddr_in serv_addr;
     memset(&serv_addr, 0, sizeof(serv_addr));
     serv_addr.sin_family = AF_INET;
-    serv_addr.sin_port = htons(10000);
+    serv_addr.sin_port = htons(m_port);
     serv_addr.sin_addr.s_addr = htonl(INADDR_ANY);  // 本地多有的ＩＰ
     // 127.0.0.1
     inet_pton(AF_INET, "127.0.0.1", &serv_addr.sin_addr.s_addr);
