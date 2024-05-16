@@ -1011,6 +1011,8 @@ CMakeFiles/myserver.dir/src/main.cpp.o
  /usr/include/x86_64-linux-gnu/bits/fcntl.h
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h
  /usr/include/linux/falloc.h
+ /usr/include/c++/11/sstream
+ /usr/include/c++/11/bits/sstream.tcc
  /home/lhz/server/include/logger.h
  /home/lhz/server/lib/spdlog/spdlog.h
  /home/lhz/server/lib/spdlog/common.h
@@ -1411,6 +1413,8 @@ CMakeFiles/myserver.dir/src/server.cpp.o
  /usr/include/x86_64-linux-gnu/bits/fcntl.h
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h
  /usr/include/linux/falloc.h
+ /usr/include/c++/11/sstream
+ /usr/include/c++/11/bits/sstream.tcc
  /home/lhz/server/include/logger.h
  /home/lhz/server/lib/spdlog/spdlog.h
  /home/lhz/server/lib/spdlog/common.h

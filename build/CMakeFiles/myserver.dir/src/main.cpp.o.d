@@ -214,7 +214,9 @@ CMakeFiles/myserver.dir/src/main.cpp.o: /home/lhz/server/src/main.cpp \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/bits/in.h \
  /usr/include/fcntl.h /usr/include/x86_64-linux-gnu/bits/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
- /usr/include/linux/falloc.h /home/lhz/server/src/../include/logger.h \
+ /usr/include/linux/falloc.h /usr/include/c++/11/sstream \
+ /usr/include/c++/11/bits/sstream.tcc \
+ /home/lhz/server/src/../include/logger.h \
  /home/lhz/server/lib/spdlog/spdlog.h \
  /home/lhz/server/lib/spdlog/common.h \
  /home/lhz/server/lib/spdlog/details/null_mutex.h \

@@ -18,6 +18,8 @@
 
 
 my_server::my_server(int argc, char*argv[]) {
+    m_port = 9006;
+    m_thread_num = 8;
     init_config(argc, argv);
     this->stop_server = false;
     timer_init();

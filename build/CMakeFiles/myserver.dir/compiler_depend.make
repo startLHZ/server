@@ -1008,6 +1008,8 @@ CMakeFiles/myserver.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/x86_64-linux-gnu/bits/fcntl.h \
   /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
   /usr/include/linux/falloc.h \
+  /usr/include/c++/11/sstream \
+  /usr/include/c++/11/bits/sstream.tcc \
   ../include/logger.h \
   ../lib/spdlog/spdlog.h \
   ../lib/spdlog/common.h \
@@ -1407,6 +1409,8 @@ CMakeFiles/myserver.dir/src/server.cpp.o: ../src/server.cpp \
   /usr/include/x86_64-linux-gnu/bits/fcntl.h \
   /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
   /usr/include/linux/falloc.h \
+  /usr/include/c++/11/sstream \
+  /usr/include/c++/11/bits/sstream.tcc \
   ../include/logger.h \
   ../lib/spdlog/spdlog.h \
   ../lib/spdlog/common.h \
@@ -1655,6 +1659,8 @@ CMakeFiles/myserver.dir/src/server.cpp.o: ../src/server.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/syscall.h:
 
+/usr/include/c++/11/sstream:
+
 /usr/include/x86_64-linux-gnu/asm/unistd_64.h:
 
 /usr/include/x86_64-linux-gnu/sys/syscall.h:
@@ -1846,6 +1852,8 @@ CMakeFiles/myserver.dir/src/server.cpp.o: ../src/server.cpp \
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+
+/usr/include/c++/11/bits/sstream.tcc:
 
 /usr/include/x86_64-linux-gnu/sys/epoll.h:
 

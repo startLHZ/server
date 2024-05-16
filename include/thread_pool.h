@@ -18,13 +18,15 @@
 #include <arpa/inet.h>
 #include <fcntl.h>
 #include <errno.h>
+#include <string>
+#include <sstream>
 #include "logger.h"
 
 // 读buf的大小
-#define BUF_SIZE 128
+#define BUF_SIZE 2048
 // 写buffer的大小
 #define BUFFER_SIZE 64
-#define FILENAME "../root/test.html"
+#define FILENAME "../root/judge.html"
 
 template<typename task_type>
 class m_thread_pool 
@@ -63,6 +65,8 @@ public:
 private:
     void taskRead(int arg, int epfd);
     void taskWrite(int arg, int epfd);
+
+    int extractAction(const char* buffer, size_t length);
 
     // 创建线程池，构造函数
     m_thread_pool(int n = 5);
@@ -135,6 +139,7 @@ void m_thread_pool<task_type>::taskRead(int arg, int epfd) {
     int sockfd = arg;
     char buf[BUF_SIZE];
     memset(buf, 0, sizeof(buf));
+    int action;
     // 循环读数据
     while(1) { 
         int len = recv(sockfd, buf, sizeof(buf), 0);
@@ -150,6 +155,8 @@ void m_thread_pool<task_type>::taskRead(int arg, int epfd) {
             // 接收的数据打印到终端
             // write(STDOUT_FILENO, buf, len);
             INFOLOG(buf);
+            action = -1;
+            action = extractAction(buf, BUF_SIZE);
         } else {
             // len == -1
             if(errno == EAGAIN)
@@ -160,7 +167,6 @@ void m_thread_pool<task_type>::taskRead(int arg, int epfd) {
                 epoll_ctl(epfd, EPOLL_CTL_DEL, sockfd, NULL);
                 close(sockfd);
                 INFOLOG("client close");
-                // exit(0);
                 break;
             }
         }
@@ -170,19 +176,44 @@ void m_thread_pool<task_type>::taskRead(int arg, int epfd) {
     char buffer[BUFFER_SIZE];
 
     // 打开文件
-    file = fopen(FILENAME, "r");
+    switch (action)
+    {
+    case -1:
+        file = fopen("../root/judge.html", "r");
+        break;
+    case 0:
+        file = fopen("../root/test.html", "r");
+        break;
+    case 1:
+        file = fopen("../root/index.html", "r");
+        break;
+    default:
+        break;
+    }
+    
     if (file == NULL) {
         perror("Error opening file");
         exit(1);
+    }
+
+    // 构建HTTP响应头
+    char header[BUFFER_SIZE];
+    sprintf(header, "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n");
+
+    // 发送HTTP响应头
+    if (send(sockfd, header, strlen(header), 0) < 0) {
+        ERRORLOG("ERROR writing to socket");
     }
 
     // 读取文件内容并发送
     while ((n = fread(buffer, 1, BUFFER_SIZE, file)) > 0) {
         if (send(sockfd, buffer, n, 0) < 0) {
             perror("ERROR writing to socket");
-            exit(1);
+            ERRORLOG("ERROR writing to socket");
+            // exit(1);
+            break;
         }
-        INFOLOG(buffer);
+        // INFOLOG(buffer);
     }
     // 关闭文件
     fclose(file);
@@ -205,4 +236,31 @@ void m_thread_pool<task_type>::manager(task_type cfd) {
     std::unique_lock<std::mutex> locker(pool_mtx);
     taskQ->add_task_Q(cfd);
     notEmpty.notify_one();
+}
+
+template<typename task_type>
+int m_thread_pool<task_type>::extractAction(const char* buffer, size_t length) {
+    std::istringstream ss(std::string(buffer, length)); // 将字符数组转换为字符串流
+    std::string line;
+    int action = -1; // 默认值为 -1，表示未找到 action
+
+    // 读取请求行
+    if (!std::getline(ss, line)) {
+        std::cerr << "Error: Empty request" << std::endl;
+        return action;
+    }
+
+    // 读取请求头
+    while (std::getline(ss, line) && !line.empty()) {
+        // 检查是否包含 action 属性
+        if (line.find("9006/0") != std::string::npos) {
+            action = 0;
+            break;
+        } else if (line.find("9006/1") != std::string::npos) {
+            action = 1;
+            break;
+        }
+    }
+
+    return action;
 }
